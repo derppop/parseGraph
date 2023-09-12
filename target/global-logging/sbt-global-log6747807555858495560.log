@@ -1,0 +1,7 @@
+[debug] > Exec(run G:\cs441\hw1\outputs\NetGraph_11-09-23-18-15-23.ngs.dot\, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to G:\cs441\parseGraph\target\scala-2.13\classes ...
+[info] done compiling
+[success] Total time: 0 s, completed Sep 11, 2023, 8:44:10 PM
+[debug] > Exec(idea-shell, None, None)
