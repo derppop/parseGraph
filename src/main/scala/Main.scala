@@ -3,7 +3,7 @@ object Main{
     if (args.length > 0) {
       val graphFile = args(0)
       val nodes = parseGraph(graphFile)
-      nodes.foreach((pair) => {
+      nodes.foreach(pair => {
         println(pair._1 + " " + pair._2)
       })
     } else {
@@ -14,7 +14,10 @@ object Main{
   private def parseGraph(fileName: String): Map[String, List[String]] = {
     import scala.io.Source
     val file = Source.fromFile(fileName)
+    // TODO: Turn nodes into an object in order to store the initial node
     var nodes = Map[String, List[String]]()
+    val initNode = file.getLines().drop(2).next().split(" ")(0).replace("\"", "")
+    nodes = nodes.updated(initNode, List())
     for(line <- file.getLines()) {
       if (line.contains("->")) {
         val edge = line
