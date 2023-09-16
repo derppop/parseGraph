@@ -1,3 +1,5 @@
+import ParseGraph.Graph
+
 object Main{
   def main(args: Array[String]): Unit = {
     if (args.length > 0) {
@@ -11,6 +13,7 @@ object Main{
       System.exit(1)
     }
   }
+
   private def parseGraph(fileName: String): Map[String, List[String]] = {
     import scala.io.Source
     val file = Source.fromFile(fileName)
@@ -27,8 +30,12 @@ object Main{
           .map((x:String) => {
             if (x.contains(" ")) x.substring(0, x.indexOf(" ")) else x
           })
-        val connectedNodesList = nodes.getOrElse(edge(0), List()) :+ edge(1)
-        nodes = nodes.updated(edge(0), connectedNodesList)
+        val fromNode: String = edge(0)
+        val toNode: String = edge(1)
+        val weight = line.substring(line.indexOf("=\"")+2, line.lastIndexOf("\"")).toDouble
+
+        val connectedNodesList = nodes.getOrElse(fromNode, List()) :+ toNode
+        nodes = nodes.updated(fromNode, connectedNodesList)
       }
     }
     nodes
