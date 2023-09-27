@@ -1,0 +1,177 @@
+00:32:19.186 [main] INFO  - Default output directory: G:\cs441\parseGraph
+00:32:19.188 [main] INFO  - Using output directory: graphs
+00:32:19.505 [main] INFO  - Generating a random graph with 100 nodes and ensuring 100.0% reachability
+00:32:19.598 [scala-execution-context-global-16] INFO  - Random value generator created with the seed Some(100)
+00:32:19.749 [main] INFO  - Inserting 100 created nodes into the graph
+00:32:19.756 [main] INFO  - Created 100 nodes
+00:32:19.871 [main] INFO  - Ready to generate 4 edge candidates
+00:32:19.877 [main] INFO  - Generated 4 edge candidates out of 10000 possible combinations
+00:32:19.880 [main] INFO  - Generated graph with 100 nodes and 2 edges
+00:32:19.899 [main] INFO  - Added edge from the init node to 4
+00:32:19.899 [main] INFO  - Added edge from the init node to 9
+00:32:19.899 [main] INFO  - Linked the init node to 2 nodes
+00:32:19.903 [main] INFO  - Added init state connected with 2 nodes
+00:32:19.913 [main] INFO  - DFS: reachable 4 nodes with 0 loops in the graph
+00:32:19.923 [main] INFO  - The reachability ratio is 4.00 or there are 4 reachable nodes out of total 100 nodes in the graph
+00:32:19.925 [main] INFO  - Force reachability: there are 96 orphan nodes in the graph
+00:32:19.938 [main] INFO  - DFS: reachable 5 nodes with 0 loops in the graph
+00:32:19.939 [main] INFO  - The reachability ratio is 5.00 or there are 5 reachable nodes out of total 100 nodes in the graph
+00:32:19.945 [main] INFO  - Force reachability: there are 95 orphan nodes in the graph
+00:32:19.954 [main] INFO  - DFS: reachable 6 nodes with 0 loops in the graph
+00:32:19.954 [main] INFO  - The reachability ratio is 6.00 or there are 6 reachable nodes out of total 100 nodes in the graph
+00:32:19.955 [main] INFO  - Force reachability: there are 94 orphan nodes in the graph
+00:32:19.963 [main] INFO  - DFS: reachable 7 nodes with 0 loops in the graph
+00:32:19.964 [main] INFO  - The reachability ratio is 7.00 or there are 7 reachable nodes out of total 100 nodes in the graph
+00:32:19.964 [main] INFO  - Force reachability: there are 93 orphan nodes in the graph
+00:32:19.970 [main] INFO  - DFS: reachable 8 nodes with 0 loops in the graph
+00:32:19.971 [main] INFO  - The reachability ratio is 8.00 or there are 8 reachable nodes out of total 100 nodes in the graph
+00:32:19.972 [main] INFO  - Force reachability: there are 92 orphan nodes in the graph
+00:32:19.979 [main] INFO  - DFS: reachable 9 nodes with 0 loops in the graph
+00:32:19.979 [main] INFO  - The reachability ratio is 9.00 or there are 9 reachable nodes out of total 100 nodes in the graph
+00:32:19.980 [main] INFO  - Force reachability: there are 91 orphan nodes in the graph
+00:32:19.987 [main] INFO  - DFS: reachable 12 nodes with 0 loops in the graph
+00:32:19.987 [main] INFO  - The reachability ratio is 12.00 or there are 12 reachable nodes out of total 100 nodes in the graph
+00:32:19.988 [main] INFO  - Force reachability: there are 88 orphan nodes in the graph
+00:32:19.994 [main] INFO  - DFS: reachable 13 nodes with 0 loops in the graph
+00:32:19.994 [main] INFO  - The reachability ratio is 13.00 or there are 13 reachable nodes out of total 100 nodes in the graph
+00:32:19.995 [main] INFO  - Force reachability: there are 87 orphan nodes in the graph
+00:32:20.001 [main] INFO  - DFS: reachable 26 nodes with 0 loops in the graph
+00:32:20.002 [main] INFO  - The reachability ratio is 26.00 or there are 26 reachable nodes out of total 100 nodes in the graph
+00:32:20.002 [main] INFO  - Force reachability: there are 74 orphan nodes in the graph
+00:32:20.009 [main] INFO  - DFS: reachable 30 nodes with 1 loops in the graph
+00:32:20.010 [main] INFO  - The reachability ratio is 30.00 or there are 30 reachable nodes out of total 100 nodes in the graph
+00:32:20.010 [main] INFO  - Force reachability: there are 70 orphan nodes in the graph
+00:32:20.020 [main] INFO  - DFS: reachable 42 nodes with 3 loops in the graph
+00:32:20.021 [main] INFO  - The reachability ratio is 42.00 or there are 42 reachable nodes out of total 100 nodes in the graph
+00:32:20.021 [main] INFO  - Force reachability: there are 58 orphan nodes in the graph
+00:32:20.028 [main] INFO  - DFS: reachable 43 nodes with 3 loops in the graph
+00:32:20.029 [main] INFO  - The reachability ratio is 43.00 or there are 43 reachable nodes out of total 100 nodes in the graph
+00:32:20.030 [main] INFO  - Force reachability: there are 57 orphan nodes in the graph
+00:32:20.038 [main] INFO  - DFS: reachable 44 nodes with 3 loops in the graph
+00:32:20.039 [main] INFO  - The reachability ratio is 44.00 or there are 44 reachable nodes out of total 100 nodes in the graph
+00:32:20.039 [main] INFO  - Force reachability: there are 56 orphan nodes in the graph
+00:32:20.047 [main] INFO  - DFS: reachable 45 nodes with 3 loops in the graph
+00:32:20.049 [main] INFO  - The reachability ratio is 45.00 or there are 45 reachable nodes out of total 100 nodes in the graph
+00:32:20.049 [main] INFO  - Force reachability: there are 55 orphan nodes in the graph
+00:32:20.054 [main] INFO  - DFS: reachable 51 nodes with 3 loops in the graph
+00:32:20.055 [main] INFO  - The reachability ratio is 51.00 or there are 51 reachable nodes out of total 100 nodes in the graph
+00:32:20.055 [main] INFO  - Force reachability: there are 49 orphan nodes in the graph
+00:32:20.059 [main] INFO  - DFS: reachable 52 nodes with 3 loops in the graph
+00:32:20.059 [main] INFO  - The reachability ratio is 52.00 or there are 52 reachable nodes out of total 100 nodes in the graph
+00:32:20.059 [main] INFO  - Force reachability: there are 48 orphan nodes in the graph
+00:32:20.064 [main] INFO  - DFS: reachable 53 nodes with 3 loops in the graph
+00:32:20.065 [main] INFO  - The reachability ratio is 53.00 or there are 53 reachable nodes out of total 100 nodes in the graph
+00:32:20.066 [main] INFO  - Force reachability: there are 47 orphan nodes in the graph
+00:32:20.070 [main] INFO  - DFS: reachable 54 nodes with 3 loops in the graph
+00:32:20.070 [main] INFO  - The reachability ratio is 54.00 or there are 54 reachable nodes out of total 100 nodes in the graph
+00:32:20.071 [main] INFO  - Force reachability: there are 46 orphan nodes in the graph
+00:32:20.073 [main] INFO  - DFS: reachable 55 nodes with 3 loops in the graph
+00:32:20.074 [main] INFO  - The reachability ratio is 55.00 or there are 55 reachable nodes out of total 100 nodes in the graph
+00:32:20.074 [main] INFO  - Force reachability: there are 45 orphan nodes in the graph
+00:32:20.077 [main] INFO  - DFS: reachable 59 nodes with 3 loops in the graph
+00:32:20.078 [main] INFO  - The reachability ratio is 59.00 or there are 59 reachable nodes out of total 100 nodes in the graph
+00:32:20.078 [main] INFO  - Force reachability: there are 41 orphan nodes in the graph
+00:32:20.081 [main] INFO  - DFS: reachable 65 nodes with 3 loops in the graph
+00:32:20.081 [main] INFO  - The reachability ratio is 65.00 or there are 65 reachable nodes out of total 100 nodes in the graph
+00:32:20.081 [main] INFO  - Force reachability: there are 35 orphan nodes in the graph
+00:32:20.084 [main] INFO  - DFS: reachable 72 nodes with 3 loops in the graph
+00:32:20.084 [main] INFO  - The reachability ratio is 72.00 or there are 72 reachable nodes out of total 100 nodes in the graph
+00:32:20.084 [main] INFO  - Force reachability: there are 28 orphan nodes in the graph
+00:32:20.087 [main] INFO  - DFS: reachable 74 nodes with 4 loops in the graph
+00:32:20.087 [main] INFO  - The reachability ratio is 74.00 or there are 74 reachable nodes out of total 100 nodes in the graph
+00:32:20.087 [main] INFO  - Force reachability: there are 26 orphan nodes in the graph
+00:32:20.089 [main] INFO  - DFS: reachable 75 nodes with 4 loops in the graph
+00:32:20.090 [main] INFO  - The reachability ratio is 75.00 or there are 75 reachable nodes out of total 100 nodes in the graph
+00:32:20.090 [main] INFO  - Force reachability: there are 25 orphan nodes in the graph
+00:32:20.092 [main] INFO  - DFS: reachable 76 nodes with 4 loops in the graph
+00:32:20.093 [main] INFO  - The reachability ratio is 76.00 or there are 76 reachable nodes out of total 100 nodes in the graph
+00:32:20.093 [main] INFO  - Force reachability: there are 24 orphan nodes in the graph
+00:32:20.096 [main] INFO  - DFS: reachable 79 nodes with 4 loops in the graph
+00:32:20.097 [main] INFO  - The reachability ratio is 79.00 or there are 79 reachable nodes out of total 100 nodes in the graph
+00:32:20.098 [main] INFO  - Force reachability: there are 21 orphan nodes in the graph
+00:32:20.100 [main] INFO  - DFS: reachable 84 nodes with 5 loops in the graph
+00:32:20.100 [main] INFO  - The reachability ratio is 84.00 or there are 84 reachable nodes out of total 100 nodes in the graph
+00:32:20.101 [main] INFO  - Force reachability: there are 16 orphan nodes in the graph
+00:32:20.103 [main] INFO  - DFS: reachable 88 nodes with 5 loops in the graph
+00:32:20.103 [main] INFO  - The reachability ratio is 88.00 or there are 88 reachable nodes out of total 100 nodes in the graph
+00:32:20.103 [main] INFO  - Force reachability: there are 12 orphan nodes in the graph
+00:32:20.105 [main] INFO  - DFS: reachable 92 nodes with 5 loops in the graph
+00:32:20.105 [main] INFO  - The reachability ratio is 92.00 or there are 92 reachable nodes out of total 100 nodes in the graph
+00:32:20.106 [main] INFO  - Force reachability: there are 8 orphan nodes in the graph
+00:32:20.107 [main] INFO  - DFS: reachable 93 nodes with 5 loops in the graph
+00:32:20.108 [main] INFO  - The reachability ratio is 93.00 or there are 93 reachable nodes out of total 100 nodes in the graph
+00:32:20.108 [main] INFO  - Force reachability: there are 7 orphan nodes in the graph
+00:32:20.110 [main] INFO  - DFS: reachable 94 nodes with 5 loops in the graph
+00:32:20.110 [main] INFO  - The reachability ratio is 94.00 or there are 94 reachable nodes out of total 100 nodes in the graph
+00:32:20.110 [main] INFO  - Force reachability: there are 6 orphan nodes in the graph
+00:32:20.112 [main] INFO  - DFS: reachable 95 nodes with 5 loops in the graph
+00:32:20.112 [main] INFO  - The reachability ratio is 95.00 or there are 95 reachable nodes out of total 100 nodes in the graph
+00:32:20.113 [main] INFO  - Force reachability: there are 5 orphan nodes in the graph
+00:32:20.114 [main] INFO  - DFS: reachable 99 nodes with 5 loops in the graph
+00:32:20.114 [main] INFO  - The reachability ratio is 99.00 or there are 99 reachable nodes out of total 100 nodes in the graph
+00:32:20.115 [main] INFO  - Force reachability: there are 1 orphan nodes in the graph
+00:32:20.116 [main] INFO  - DFS: reachable 100 nodes with 5 loops in the graph
+00:32:20.116 [main] INFO  - The reachability ratio is 100.00 or there are 100 reachable nodes out of total 100 nodes in the graph
+00:32:20.116 [main] INFO  - Force reachability: there are 0 orphan nodes in the graph
+00:32:20.282 [main] INFO  - Successfully persisted the graph to graphs/NetGraph_24-09-23-00-32-20.ngs
+00:32:20.332 [main] INFO  - Out of the 94 nodes, perturbations will be applied to 29 nodes
+00:32:20.339 [main] INFO  - Applying perturbation REMOVEEDGE on node NodeObject(49,2,13,1,83,0,2,2,0.12308536956887883)
+00:32:20.344 [main] INFO  - Modified an edge: 
+00:32:20.344 [main] INFO  - Applying perturbation ADDEDGE on node NodeObject(54,4,11,1,34,3,6,13,0.24693073115781816)
+00:32:20.349 [main] INFO  - Removed an edge from NodeObject(54,4,11,1,34,3,6,13,0.24693073115781816) to NodeObject(66,3,8,1,54,0,2,7,0.6906375091063531) successfully
+00:32:20.350 [main] INFO  - Added edge Action(12,NodeObject(54,4,11,1,34,3,6,13,0.24693073115781816),NodeObject(66,3,8,1,54,0,2,7,0.6906375091063531),1,0,Some(7),0.18367438523848478) from NodeObject(54,4,11,1,34,3,6,13,0.24693073115781816) to NodeObject(66,3,8,1,54,0,2,7,0.6906375091063531) successfully
+00:32:20.351 [main] INFO  - Modified an edge: (OriginalNetComponent(NodeObject(54,4,11,1,34,3,6,13,0.24693073115781816)),EdgeModified(Action(4,NodeObject(54,4,11,1,34,3,6,13,0.24693073115781816),NodeObject(66,3,8,1,54,0,2,7,0.6906375091063531),17,0,Some(5),0.1660849452170604)))(OriginalNetComponent(NodeObject(54,4,11,1,34,3,6,13,0.24693073115781816)),EdgeRemoved(Action(4,NodeObject(54,4,11,1,34,3,6,13,0.24693073115781816),NodeObject(66,3,8,1,54,0,2,7,0.6906375091063531),17,0,Some(5),0.7193289023747697)))(OriginalNetComponent(NodeObject(54,4,11,1,34,3,6,13,0.24693073115781816)),EdgeAdded(Action(12,NodeObject(54,4,11,1,34,3,6,13,0.24693073115781816),NodeObject(66,3,8,1,54,0,2,7,0.6906375091063531),1,0,Some(7),0.18367438523848478)))
+00:32:20.351 [main] INFO  - Applying perturbation REMOVENODE on node NodeObject(66,3,8,1,54,0,2,7,0.6906375091063531)
+00:32:20.354 [main] INFO  - Applying perturbation REMOVEEDGE on node NodeObject(56,4,15,1,4,3,5,8,0.14755611610865949)
+00:32:20.354 [main] INFO  - Modified an edge: 
+00:32:20.354 [main] INFO  - Applying perturbation MODIFYNODE on node NodeObject(31,5,1,1,58,1,2,5,0.6624774691190418)
+00:32:20.363 [main] INFO  - Applying perturbation ADDEDGE on node NodeObject(24,6,12,1,0,3,3,4,0.06803201189384966)
+00:32:20.364 [main] INFO  - Added edge Action(9,NodeObject(24,6,12,1,0,3,3,4,0.06803201189384966),NodeObject(27,4,15,1,74,4,3,19,0.5983741322693812),60,25,None,0.24685224954484475) from NodeObject(24,6,12,1,0,3,3,4,0.06803201189384966) to NodeObject(27,4,15,1,74,4,3,19,0.5983741322693812) successfully
+00:32:20.364 [main] INFO  - Modified an edge: (OriginalNetComponent(NodeObject(24,6,12,1,0,3,3,4,0.06803201189384966)),EdgeAdded(Action(9,NodeObject(24,6,12,1,0,3,3,4,0.06803201189384966),NodeObject(27,4,15,1,74,4,3,19,0.5983741322693812),60,25,None,0.24685224954484475)))
+00:32:20.365 [main] INFO  - Applying perturbation ADDEDGE on node NodeObject(8,6,0,1,37,1,4,10,0.42929431458588285)
+00:32:20.366 [main] INFO  - Removed an edge from NodeObject(8,6,0,1,37,1,4,10,0.42929431458588285) to NodeObject(97,4,15,1,14,0,1,2,0.5811982096322251) successfully
+00:32:20.367 [main] INFO  - Added edge Action(18,NodeObject(8,6,0,1,37,1,4,10,0.42929431458588285),NodeObject(97,4,15,1,14,0,1,2,0.5811982096322251),6,1,None,0.04872204822186865) from NodeObject(8,6,0,1,37,1,4,10,0.42929431458588285) to NodeObject(97,4,15,1,14,0,1,2,0.5811982096322251) successfully
+00:32:20.367 [main] INFO  - Modified an edge: (OriginalNetComponent(NodeObject(8,6,0,1,37,1,4,10,0.42929431458588285)),EdgeModified(Action(13,NodeObject(8,6,0,1,37,1,4,10,0.42929431458588285),NodeObject(97,4,15,1,14,0,1,2,0.5811982096322251),18,1,Some(27),0.19642151892838855)))(OriginalNetComponent(NodeObject(8,6,0,1,37,1,4,10,0.42929431458588285)),EdgeRemoved(Action(3,NodeObject(8,6,0,1,37,1,4,10,0.42929431458588285),NodeObject(97,4,15,1,14,0,1,2,0.5811982096322251),18,1,Some(27),0.05130770715718702)))(OriginalNetComponent(NodeObject(8,6,0,1,37,1,4,10,0.42929431458588285)),EdgeAdded(Action(18,NodeObject(8,6,0,1,37,1,4,10,0.42929431458588285),NodeObject(97,4,15,1,14,0,1,2,0.5811982096322251),6,1,None,0.04872204822186865)))
+00:32:20.368 [main] INFO  - Applying perturbation REMOVEEDGE on node NodeObject(6,2,19,1,86,2,1,4,0.6831798860672457)
+00:32:20.368 [main] INFO  - Modified an edge: 
+00:32:20.368 [main] INFO  - Applying perturbation MODIFYNODE on node NodeObject(46,0,1,1,22,2,1,4,0.21463065364570222)
+00:32:20.369 [main] INFO  - Applying perturbation ADDNODE on node NodeObject(48,2,14,1,98,4,5,16,0.1379913990760413)
+00:32:20.374 [main] INFO  - Applying perturbation MODIFYNODE on node NodeObject(64,1,19,1,44,0,0,2,0.46209983408457767)
+00:32:20.376 [main] INFO  - Applying perturbation REMOVEEDGE on node NodeObject(17,3,3,1,72,2,2,3,0.18829120884178885)
+00:32:20.376 [main] INFO  - Modified an edge: 
+00:32:20.376 [main] INFO  - Applying perturbation ADDEDGE on node NodeObject(58,0,14,1,26,2,1,13,0.0490063731162913)
+00:32:20.377 [main] INFO  - Removed an edge from NodeObject(58,0,14,1,26,2,1,13,0.0490063731162913) to NodeObject(31,5,1,1,47,1,32,5,0.45235485348892046) successfully
+00:32:20.377 [main] INFO  - Added edge Action(8,NodeObject(58,0,14,1,26,2,1,13,0.0490063731162913),NodeObject(31,5,1,1,47,1,32,5,0.45235485348892046),0,61,Some(69),0.9705857767580877) from NodeObject(58,0,14,1,26,2,1,13,0.0490063731162913) to NodeObject(31,5,1,1,47,1,32,5,0.45235485348892046) successfully
+00:32:20.378 [main] INFO  - Modified an edge: (OriginalNetComponent(NodeObject(58,0,14,1,26,2,1,13,0.0490063731162913)),EdgeModified(Action(7,NodeObject(58,0,14,1,26,2,1,13,0.0490063731162913),NodeObject(31,5,1,1,58,1,2,5,0.6624774691190418),0,65,Some(14),0.7957822067766434)))(OriginalNetComponent(NodeObject(58,0,14,1,26,2,1,13,0.0490063731162913)),EdgeRemoved(Action(0,NodeObject(58,0,14,1,26,2,1,13,0.0490063731162913),NodeObject(31,5,1,1,58,1,2,5,0.6624774691190418),0,65,Some(14),0.909694650700874)))(OriginalNetComponent(NodeObject(58,0,14,1,26,2,1,13,0.0490063731162913)),EdgeAdded(Action(8,NodeObject(58,0,14,1,26,2,1,13,0.0490063731162913),NodeObject(31,5,1,1,47,1,32,5,0.45235485348892046),0,61,Some(69),0.9705857767580877)))
+00:32:20.378 [main] INFO  - Applying perturbation MODIFYNODE on node NodeObject(68,2,9,1,89,4,0,9,0.21743943017357548)
+00:32:20.381 [main] INFO  - Applying perturbation MODIFYNODE on node NodeObject(3,0,17,1,92,0,3,17,0.9518377359745915)
+00:32:20.382 [main] INFO  - Applying perturbation REMOVENODE on node NodeObject(95,1,6,1,58,2,3,13,0.27426241036223)
+00:32:20.383 [main] INFO  - Applying perturbation MODIFYNODE on node NodeObject(70,4,14,1,70,3,6,16,0.9544087129479122)
+00:32:20.393 [main] INFO  - Applying perturbation ADDEDGE on node NodeObject(94,0,5,1,46,4,1,1,0.29071384371337894)
+00:32:20.394 [main] INFO  - Removed an edge from NodeObject(94,0,5,1,46,4,1,1,0.29071384371337894) to NodeObject(45,6,16,1,68,4,1,5,0.14108637287554204) successfully
+00:32:20.394 [main] INFO  - Added edge Action(9,NodeObject(94,0,5,1,46,4,1,1,0.29071384371337894),NodeObject(45,6,16,1,68,4,1,5,0.14108637287554204),0,115,None,0.9588210165629069) from NodeObject(94,0,5,1,46,4,1,1,0.29071384371337894) to NodeObject(45,6,16,1,68,4,1,5,0.14108637287554204) successfully
+00:32:20.395 [main] INFO  - Modified an edge: (OriginalNetComponent(NodeObject(94,0,5,1,46,4,1,1,0.29071384371337894)),EdgeModified(Action(16,NodeObject(94,0,5,1,46,4,1,1,0.29071384371337894),NodeObject(45,6,16,1,68,4,1,5,0.14108637287554204),0,50,Some(22),0.9204397468164806)))(OriginalNetComponent(NodeObject(94,0,5,1,46,4,1,1,0.29071384371337894)),EdgeRemoved(Action(1,NodeObject(94,0,5,1,46,4,1,1,0.29071384371337894),NodeObject(45,6,16,1,68,4,1,5,0.14108637287554204),0,50,Some(22),0.25527844041714154)))(OriginalNetComponent(NodeObject(94,0,5,1,46,4,1,1,0.29071384371337894)),EdgeAdded(Action(9,NodeObject(94,0,5,1,46,4,1,1,0.29071384371337894),NodeObject(45,6,16,1,68,4,1,5,0.14108637287554204),0,115,None,0.9588210165629069)))
+00:32:20.396 [main] INFO  - Applying perturbation MODIFYNODE on node NodeObject(37,0,10,1,66,1,4,14,0.08400981740440716)
+00:32:20.397 [main] INFO  - Applying perturbation ADDEDGE on node NodeObject(85,1,16,1,51,2,0,16,0.7408464236103026)
+00:32:20.397 [main] INFO  - Removed an edge from NodeObject(85,1,16,1,51,2,0,16,0.7408464236103026) to NodeObject(3,0,17,1,60,0,83,17,0.7428248623284408) successfully
+00:32:20.398 [main] INFO  - Added edge Action(13,NodeObject(85,1,16,1,51,2,0,16,0.7408464236103026),NodeObject(3,0,17,1,60,0,83,17,0.7428248623284408),7,0,Some(86),0.9794975515236108) from NodeObject(85,1,16,1,51,2,0,16,0.7408464236103026) to NodeObject(3,0,17,1,60,0,83,17,0.7428248623284408) successfully
+00:32:20.398 [main] INFO  - Modified an edge: (OriginalNetComponent(NodeObject(85,1,16,1,51,2,0,16,0.7408464236103026)),EdgeModified(Action(17,NodeObject(85,1,16,1,51,2,0,16,0.7408464236103026),NodeObject(3,0,17,1,92,0,3,17,0.9518377359745915),9,0,None,0.5635120753245181)))(OriginalNetComponent(NodeObject(85,1,16,1,51,2,0,16,0.7408464236103026)),EdgeRemoved(Action(3,NodeObject(85,1,16,1,51,2,0,16,0.7408464236103026),NodeObject(3,0,17,1,92,0,3,17,0.9518377359745915),9,0,None,0.5393333803651186)))(OriginalNetComponent(NodeObject(85,1,16,1,51,2,0,16,0.7408464236103026)),EdgeAdded(Action(13,NodeObject(85,1,16,1,51,2,0,16,0.7408464236103026),NodeObject(3,0,17,1,60,0,83,17,0.7428248623284408),7,0,Some(86),0.9794975515236108)))
+00:32:20.398 [main] INFO  - Applying perturbation ADDEDGE on node NodeObject(10,5,17,1,93,3,4,17,0.7002450202144935)
+00:32:20.399 [main] INFO  - Removed an edge from NodeObject(10,5,17,1,93,3,4,17,0.7002450202144935) to NodeObject(62,3,10,1,86,4,4,8,0.3095334172099039) successfully
+00:32:20.399 [main] INFO  - Added edge Action(12,NodeObject(10,5,17,1,93,3,4,17,0.7002450202144935),NodeObject(62,3,10,1,86,4,4,8,0.3095334172099039),29,2,None,0.6601702977687739) from NodeObject(10,5,17,1,93,3,4,17,0.7002450202144935) to NodeObject(62,3,10,1,86,4,4,8,0.3095334172099039) successfully
+00:32:20.400 [main] INFO  - Modified an edge: (OriginalNetComponent(NodeObject(10,5,17,1,93,3,4,17,0.7002450202144935)),EdgeModified(Action(15,NodeObject(10,5,17,1,93,3,4,17,0.7002450202144935),NodeObject(62,3,10,1,86,4,4,8,0.3095334172099039),18,29,None,0.3103953202607236)))(OriginalNetComponent(NodeObject(10,5,17,1,93,3,4,17,0.7002450202144935)),EdgeRemoved(Action(8,NodeObject(10,5,17,1,93,3,4,17,0.7002450202144935),NodeObject(62,3,10,1,86,4,4,8,0.3095334172099039),18,29,None,0.031040935083990084)))(OriginalNetComponent(NodeObject(10,5,17,1,93,3,4,17,0.7002450202144935)),EdgeAdded(Action(12,NodeObject(10,5,17,1,93,3,4,17,0.7002450202144935),NodeObject(62,3,10,1,86,4,4,8,0.3095334172099039),29,2,None,0.6601702977687739)))
+00:32:20.401 [main] INFO  - Applying perturbation REMOVENODE on node NodeObject(60,6,19,1,49,4,5,4,0.27642541010359556)
+00:32:20.401 [main] INFO  - Applying perturbation ADDNODE on node NodeObject(20,0,17,1,11,0,6,13,0.25880479138407175)
+00:32:20.413 [main] INFO  - Applying perturbation ADDEDGE on node NodeObject(96,1,12,1,80,3,2,1,0.6995831679380101)
+00:32:20.414 [main] INFO  - Removed an edge from NodeObject(96,1,12,1,80,3,2,1,0.6995831679380101) to NodeObject(5,0,3,1,71,0,0,2,0.47692173068151) successfully
+00:32:20.414 [main] INFO  - Added edge Action(10,NodeObject(96,1,12,1,80,3,2,1,0.6995831679380101),NodeObject(5,0,3,1,71,0,0,2,0.47692173068151),1,0,None,0.7978208360922127) from NodeObject(96,1,12,1,80,3,2,1,0.6995831679380101) to NodeObject(5,0,3,1,71,0,0,2,0.47692173068151) successfully
+00:32:20.415 [main] INFO  - Modified an edge: (OriginalNetComponent(NodeObject(96,1,12,1,80,3,2,1,0.6995831679380101)),EdgeModified(Action(13,NodeObject(96,1,12,1,80,3,2,1,0.6995831679380101),NodeObject(5,0,3,1,71,0,0,2,0.47692173068151),47,0,Some(41),0.8163121241021198)))(OriginalNetComponent(NodeObject(96,1,12,1,80,3,2,1,0.6995831679380101)),EdgeRemoved(Action(0,NodeObject(96,1,12,1,80,3,2,1,0.6995831679380101),NodeObject(5,0,3,1,71,0,0,2,0.47692173068151),47,0,Some(41),0.9610794844262401)))(OriginalNetComponent(NodeObject(96,1,12,1,80,3,2,1,0.6995831679380101)),EdgeAdded(Action(10,NodeObject(96,1,12,1,80,3,2,1,0.6995831679380101),NodeObject(5,0,3,1,71,0,0,2,0.47692173068151),1,0,None,0.7978208360922127)))
+00:32:20.415 [main] INFO  - Applying perturbation ADDNODE on node NodeObject(45,6,16,1,68,4,1,5,0.14108637287554204)
+00:32:20.419 [main] INFO  - Applying perturbation MODIFYNODE on node NodeObject(14,6,9,1,24,0,3,8,0.024348735917429254)
+00:32:20.422 [main] INFO  - Applying perturbation MODIFYNODE on node NodeObject(61,4,2,1,42,3,6,14,0.9097147805950944)
+00:32:20.427 [main] INFO  - Applying perturbation REMOVENODE on node NodeObject(21,2,5,1,24,1,3,2,0.44698124899755376)
+00:32:20.427 [main] INFO  - Applying perturbation ADDNODE on node NodeObject(82,0,15,1,76,0,5,13,0.755690239147218)
+00:32:20.654 [main] INFO  - Successfully persisted the graph to graphs/NetGraph_24-09-23-00-32-20.ngs.perturbed
+00:32:20.659 [main] INFO  - 17 nodes and 37 edges have been perturbed
+00:32:20.661 [main] INFO  - There are 9 modified nodes, 4 added nodes and 4 removed nodes.
+00:32:20.662 [main] INFO  - There are 7 modified edges, 12 added edges and 18 removed edges.

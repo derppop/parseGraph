@@ -1,0 +1,366 @@
+22:18:01.194 [main] INFO  - Default output directory: G:\cs441\parseGraph
+22:18:01.196 [main] ERROR - Output directory /Users/drmark/Library/CloudStorage/OneDrive-UniversityofIllinoisChicago/Github/NetGameSim/outputs does not exist or is not a directory, using current directory instead: G:\cs441\parseGraph
+22:18:01.502 [main] INFO  - Generating a random graph with 500 nodes and ensuring 100.0% reachability
+22:18:01.587 [scala-execution-context-global-15] INFO  - Random value generator created with the seed Some(100)
+22:18:01.793 [main] INFO  - Inserting 500 created nodes into the graph
+22:18:01.796 [main] INFO  - Created 500 nodes
+22:18:02.024 [main] INFO  - Ready to generate 253 edge candidates
+22:18:02.038 [main] INFO  - Generated 253 edge candidates out of 250000 possible combinations
+22:18:02.042 [main] INFO  - Generated graph with 500 nodes and 252 edges
+22:18:02.058 [main] INFO  - Added edge from the init node to 351
+22:18:02.058 [main] INFO  - Added edge from the init node to 77
+22:18:02.058 [main] INFO  - Linked the init node to 2 nodes
+22:18:02.062 [main] INFO  - Added init state connected with 2 nodes
+22:18:02.077 [main] INFO  - DFS: reachable 23 nodes with 0 loops in the graph
+22:18:02.084 [main] INFO  - The reachability ratio is 4.60 or there are 23 reachable nodes out of total 500 nodes in the graph
+22:18:02.092 [main] INFO  - Force reachability: there are 477 orphan nodes in the graph
+22:18:02.172 [main] INFO  - DFS: reachable 24 nodes with 0 loops in the graph
+22:18:02.172 [main] INFO  - The reachability ratio is 4.80 or there are 24 reachable nodes out of total 500 nodes in the graph
+22:18:02.173 [main] INFO  - Force reachability: there are 476 orphan nodes in the graph
+22:18:02.247 [main] INFO  - DFS: reachable 286 nodes with 20 loops in the graph
+22:18:02.248 [main] INFO  - The reachability ratio is 57.20 or there are 286 reachable nodes out of total 500 nodes in the graph
+22:18:02.251 [main] INFO  - Force reachability: there are 214 orphan nodes in the graph
+22:18:02.270 [main] INFO  - DFS: reachable 287 nodes with 20 loops in the graph
+22:18:02.272 [main] INFO  - The reachability ratio is 57.40 or there are 287 reachable nodes out of total 500 nodes in the graph
+22:18:02.273 [main] INFO  - Force reachability: there are 213 orphan nodes in the graph
+22:18:02.305 [main] INFO  - DFS: reachable 288 nodes with 20 loops in the graph
+22:18:02.307 [main] INFO  - The reachability ratio is 57.60 or there are 288 reachable nodes out of total 500 nodes in the graph
+22:18:02.308 [main] INFO  - Force reachability: there are 212 orphan nodes in the graph
+22:18:02.320 [main] INFO  - DFS: reachable 389 nodes with 20 loops in the graph
+22:18:02.321 [main] INFO  - The reachability ratio is 77.80 or there are 389 reachable nodes out of total 500 nodes in the graph
+22:18:02.321 [main] INFO  - Force reachability: there are 111 orphan nodes in the graph
+22:18:02.329 [main] INFO  - DFS: reachable 393 nodes with 20 loops in the graph
+22:18:02.330 [main] INFO  - The reachability ratio is 78.60 or there are 393 reachable nodes out of total 500 nodes in the graph
+22:18:02.330 [main] INFO  - Force reachability: there are 107 orphan nodes in the graph
+22:18:02.335 [main] INFO  - DFS: reachable 396 nodes with 21 loops in the graph
+22:18:02.336 [main] INFO  - The reachability ratio is 79.20 or there are 396 reachable nodes out of total 500 nodes in the graph
+22:18:02.336 [main] INFO  - Force reachability: there are 104 orphan nodes in the graph
+22:18:02.342 [main] INFO  - DFS: reachable 405 nodes with 24 loops in the graph
+22:18:02.343 [main] INFO  - The reachability ratio is 81.00 or there are 405 reachable nodes out of total 500 nodes in the graph
+22:18:02.343 [main] INFO  - Force reachability: there are 95 orphan nodes in the graph
+22:18:02.349 [main] INFO  - DFS: reachable 406 nodes with 24 loops in the graph
+22:18:02.350 [main] INFO  - The reachability ratio is 81.20 or there are 406 reachable nodes out of total 500 nodes in the graph
+22:18:02.350 [main] INFO  - Force reachability: there are 94 orphan nodes in the graph
+22:18:02.356 [main] INFO  - DFS: reachable 407 nodes with 25 loops in the graph
+22:18:02.357 [main] INFO  - The reachability ratio is 81.40 or there are 407 reachable nodes out of total 500 nodes in the graph
+22:18:02.357 [main] INFO  - Force reachability: there are 93 orphan nodes in the graph
+22:18:02.362 [main] INFO  - DFS: reachable 466 nodes with 43 loops in the graph
+22:18:02.363 [main] INFO  - The reachability ratio is 93.20 or there are 466 reachable nodes out of total 500 nodes in the graph
+22:18:02.363 [main] INFO  - Force reachability: there are 34 orphan nodes in the graph
+22:18:02.367 [main] INFO  - DFS: reachable 468 nodes with 45 loops in the graph
+22:18:02.367 [main] INFO  - The reachability ratio is 93.60 or there are 468 reachable nodes out of total 500 nodes in the graph
+22:18:02.368 [main] INFO  - Force reachability: there are 32 orphan nodes in the graph
+22:18:02.372 [main] INFO  - DFS: reachable 469 nodes with 45 loops in the graph
+22:18:02.373 [main] INFO  - The reachability ratio is 93.80 or there are 469 reachable nodes out of total 500 nodes in the graph
+22:18:02.373 [main] INFO  - Force reachability: there are 31 orphan nodes in the graph
+22:18:02.377 [main] INFO  - DFS: reachable 470 nodes with 43 loops in the graph
+22:18:02.378 [main] INFO  - The reachability ratio is 94.00 or there are 470 reachable nodes out of total 500 nodes in the graph
+22:18:02.378 [main] INFO  - Force reachability: there are 30 orphan nodes in the graph
+22:18:02.382 [main] INFO  - DFS: reachable 471 nodes with 48 loops in the graph
+22:18:02.382 [main] INFO  - The reachability ratio is 94.20 or there are 471 reachable nodes out of total 500 nodes in the graph
+22:18:02.382 [main] INFO  - Force reachability: there are 29 orphan nodes in the graph
+22:18:02.386 [main] INFO  - DFS: reachable 473 nodes with 55 loops in the graph
+22:18:02.387 [main] INFO  - The reachability ratio is 94.60 or there are 473 reachable nodes out of total 500 nodes in the graph
+22:18:02.387 [main] INFO  - Force reachability: there are 27 orphan nodes in the graph
+22:18:02.392 [main] INFO  - DFS: reachable 475 nodes with 55 loops in the graph
+22:18:02.392 [main] INFO  - The reachability ratio is 95.00 or there are 475 reachable nodes out of total 500 nodes in the graph
+22:18:02.393 [main] INFO  - Force reachability: there are 25 orphan nodes in the graph
+22:18:02.397 [main] INFO  - DFS: reachable 476 nodes with 55 loops in the graph
+22:18:02.398 [main] INFO  - The reachability ratio is 95.20 or there are 476 reachable nodes out of total 500 nodes in the graph
+22:18:02.398 [main] INFO  - Force reachability: there are 24 orphan nodes in the graph
+22:18:02.403 [main] INFO  - DFS: reachable 477 nodes with 55 loops in the graph
+22:18:02.404 [main] INFO  - The reachability ratio is 95.40 or there are 477 reachable nodes out of total 500 nodes in the graph
+22:18:02.404 [main] INFO  - Force reachability: there are 23 orphan nodes in the graph
+22:18:02.408 [main] INFO  - DFS: reachable 478 nodes with 55 loops in the graph
+22:18:02.409 [main] INFO  - The reachability ratio is 95.60 or there are 478 reachable nodes out of total 500 nodes in the graph
+22:18:02.409 [main] INFO  - Force reachability: there are 22 orphan nodes in the graph
+22:18:02.412 [main] INFO  - DFS: reachable 481 nodes with 51 loops in the graph
+22:18:02.413 [main] INFO  - The reachability ratio is 96.20 or there are 481 reachable nodes out of total 500 nodes in the graph
+22:18:02.413 [main] INFO  - Force reachability: there are 19 orphan nodes in the graph
+22:18:02.416 [main] INFO  - DFS: reachable 490 nodes with 51 loops in the graph
+22:18:02.417 [main] INFO  - The reachability ratio is 98.00 or there are 490 reachable nodes out of total 500 nodes in the graph
+22:18:02.417 [main] INFO  - Force reachability: there are 10 orphan nodes in the graph
+22:18:02.421 [main] INFO  - DFS: reachable 491 nodes with 51 loops in the graph
+22:18:02.421 [main] INFO  - The reachability ratio is 98.20 or there are 491 reachable nodes out of total 500 nodes in the graph
+22:18:02.421 [main] INFO  - Force reachability: there are 9 orphan nodes in the graph
+22:18:02.425 [main] INFO  - DFS: reachable 492 nodes with 62 loops in the graph
+22:18:02.426 [main] INFO  - The reachability ratio is 98.40 or there are 492 reachable nodes out of total 500 nodes in the graph
+22:18:02.426 [main] INFO  - Force reachability: there are 8 orphan nodes in the graph
+22:18:02.429 [main] INFO  - DFS: reachable 495 nodes with 64 loops in the graph
+22:18:02.430 [main] INFO  - The reachability ratio is 99.00 or there are 495 reachable nodes out of total 500 nodes in the graph
+22:18:02.430 [main] INFO  - Force reachability: there are 5 orphan nodes in the graph
+22:18:02.434 [main] INFO  - DFS: reachable 497 nodes with 67 loops in the graph
+22:18:02.434 [main] INFO  - The reachability ratio is 99.40 or there are 497 reachable nodes out of total 500 nodes in the graph
+22:18:02.435 [main] INFO  - Force reachability: there are 3 orphan nodes in the graph
+22:18:02.439 [main] INFO  - DFS: reachable 498 nodes with 69 loops in the graph
+22:18:02.439 [main] INFO  - The reachability ratio is 99.60 or there are 498 reachable nodes out of total 500 nodes in the graph
+22:18:02.440 [main] INFO  - Force reachability: there are 2 orphan nodes in the graph
+22:18:02.443 [main] INFO  - DFS: reachable 500 nodes with 71 loops in the graph
+22:18:02.443 [main] INFO  - The reachability ratio is 100.00 or there are 500 reachable nodes out of total 500 nodes in the graph
+22:18:02.444 [main] INFO  - Force reachability: there are 0 orphan nodes in the graph
+22:18:02.464 [main] ERROR - Failed to persist the graph to C:\Users\yortb\Desktop\cs441\parseGraph\graphsNetGraph_21-09-23-22-18-02.ngs : 
+java.io.FileNotFoundException: C:\Users\yortb\Desktop\cs441\parseGraph\graphsNetGraph_21-09-23-22-18-02.ngs (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:158)
+	at NetGraphAlgebraDefs.GraphStore.persist$$anonfun$1(GraphStore.scala:28)
+	at scala.util.Try$.apply(Try.scala:210)
+	at NetGraphAlgebraDefs.GraphStore.persist(GraphStore.scala:28)
+	at NetGraphAlgebraDefs.GraphStore.persist$(GraphStore.scala:18)
+	at NetGraphAlgebraDefs.NetGraph.persist(NetGraph.scala:23)
+	at Main$.main(Main.scala:7)
+	at Main.main(Main.scala)
+22:18:46.595 [main] INFO  - Default output directory: G:\cs441\parseGraph
+22:18:46.597 [main] ERROR - Output directory /Users/drmark/Library/CloudStorage/OneDrive-UniversityofIllinoisChicago/Github/NetGameSim/outputs does not exist or is not a directory, using current directory instead: G:\cs441\parseGraph
+22:18:46.949 [main] INFO  - Generating a random graph with 500 nodes and ensuring 100.0% reachability
+22:18:47.038 [scala-execution-context-global-19] INFO  - Random value generator created with the seed Some(100)
+22:18:47.241 [main] INFO  - Inserting 500 created nodes into the graph
+22:18:47.247 [main] INFO  - Created 500 nodes
+22:18:47.453 [main] INFO  - Ready to generate 236 edge candidates
+22:18:47.469 [main] INFO  - Generated 236 edge candidates out of 250000 possible combinations
+22:18:47.473 [main] INFO  - Generated graph with 500 nodes and 234 edges
+22:18:47.497 [main] INFO  - Added edge from the init node to 481
+22:18:47.497 [main] INFO  - Added edge from the init node to 124
+22:18:47.497 [main] INFO  - Linked the init node to 2 nodes
+22:18:47.502 [main] INFO  - Added init state connected with 2 nodes
+22:18:47.520 [main] INFO  - DFS: reachable 11 nodes with 0 loops in the graph
+22:18:47.529 [main] INFO  - The reachability ratio is 2.20 or there are 11 reachable nodes out of total 500 nodes in the graph
+22:18:47.536 [main] INFO  - Force reachability: there are 489 orphan nodes in the graph
+22:18:47.613 [main] INFO  - DFS: reachable 12 nodes with 0 loops in the graph
+22:18:47.614 [main] INFO  - The reachability ratio is 2.40 or there are 12 reachable nodes out of total 500 nodes in the graph
+22:18:47.614 [main] INFO  - Force reachability: there are 488 orphan nodes in the graph
+22:18:47.660 [main] INFO  - DFS: reachable 15 nodes with 0 loops in the graph
+22:18:47.661 [main] INFO  - The reachability ratio is 3.00 or there are 15 reachable nodes out of total 500 nodes in the graph
+22:18:47.662 [main] INFO  - Force reachability: there are 485 orphan nodes in the graph
+22:18:47.717 [main] INFO  - DFS: reachable 17 nodes with 0 loops in the graph
+22:18:47.718 [main] INFO  - The reachability ratio is 3.40 or there are 17 reachable nodes out of total 500 nodes in the graph
+22:18:47.718 [main] INFO  - Force reachability: there are 483 orphan nodes in the graph
+22:18:47.763 [main] INFO  - DFS: reachable 446 nodes with 110 loops in the graph
+22:18:47.764 [main] INFO  - The reachability ratio is 89.20 or there are 446 reachable nodes out of total 500 nodes in the graph
+22:18:47.765 [main] INFO  - Force reachability: there are 54 orphan nodes in the graph
+22:18:47.775 [main] INFO  - DFS: reachable 447 nodes with 130 loops in the graph
+22:18:47.776 [main] INFO  - The reachability ratio is 89.40 or there are 447 reachable nodes out of total 500 nodes in the graph
+22:18:47.777 [main] INFO  - Force reachability: there are 53 orphan nodes in the graph
+22:18:47.785 [main] INFO  - DFS: reachable 448 nodes with 135 loops in the graph
+22:18:47.785 [main] INFO  - The reachability ratio is 89.60 or there are 448 reachable nodes out of total 500 nodes in the graph
+22:18:47.786 [main] INFO  - Force reachability: there are 52 orphan nodes in the graph
+22:18:47.793 [main] INFO  - DFS: reachable 449 nodes with 136 loops in the graph
+22:18:47.794 [main] INFO  - The reachability ratio is 89.80 or there are 449 reachable nodes out of total 500 nodes in the graph
+22:18:47.794 [main] INFO  - Force reachability: there are 51 orphan nodes in the graph
+22:18:47.799 [main] INFO  - DFS: reachable 450 nodes with 121 loops in the graph
+22:18:47.800 [main] INFO  - The reachability ratio is 90.00 or there are 450 reachable nodes out of total 500 nodes in the graph
+22:18:47.801 [main] INFO  - Force reachability: there are 50 orphan nodes in the graph
+22:18:47.807 [main] INFO  - DFS: reachable 451 nodes with 126 loops in the graph
+22:18:47.808 [main] INFO  - The reachability ratio is 90.20 or there are 451 reachable nodes out of total 500 nodes in the graph
+22:18:47.808 [main] INFO  - Force reachability: there are 49 orphan nodes in the graph
+22:18:47.815 [main] INFO  - DFS: reachable 452 nodes with 131 loops in the graph
+22:18:47.815 [main] INFO  - The reachability ratio is 90.40 or there are 452 reachable nodes out of total 500 nodes in the graph
+22:18:47.816 [main] INFO  - Force reachability: there are 48 orphan nodes in the graph
+22:18:47.822 [main] INFO  - DFS: reachable 453 nodes with 130 loops in the graph
+22:18:47.823 [main] INFO  - The reachability ratio is 90.60 or there are 453 reachable nodes out of total 500 nodes in the graph
+22:18:47.823 [main] INFO  - Force reachability: there are 47 orphan nodes in the graph
+22:18:47.828 [main] INFO  - DFS: reachable 456 nodes with 129 loops in the graph
+22:18:47.829 [main] INFO  - The reachability ratio is 91.20 or there are 456 reachable nodes out of total 500 nodes in the graph
+22:18:47.829 [main] INFO  - Force reachability: there are 44 orphan nodes in the graph
+22:18:47.834 [main] INFO  - DFS: reachable 457 nodes with 129 loops in the graph
+22:18:47.834 [main] INFO  - The reachability ratio is 91.40 or there are 457 reachable nodes out of total 500 nodes in the graph
+22:18:47.835 [main] INFO  - Force reachability: there are 43 orphan nodes in the graph
+22:18:47.839 [main] INFO  - DFS: reachable 458 nodes with 134 loops in the graph
+22:18:47.840 [main] INFO  - The reachability ratio is 91.60 or there are 458 reachable nodes out of total 500 nodes in the graph
+22:18:47.841 [main] INFO  - Force reachability: there are 42 orphan nodes in the graph
+22:18:47.846 [main] INFO  - DFS: reachable 475 nodes with 147 loops in the graph
+22:18:47.847 [main] INFO  - The reachability ratio is 95.00 or there are 475 reachable nodes out of total 500 nodes in the graph
+22:18:47.847 [main] INFO  - Force reachability: there are 25 orphan nodes in the graph
+22:18:47.853 [main] INFO  - DFS: reachable 476 nodes with 147 loops in the graph
+22:18:47.854 [main] INFO  - The reachability ratio is 95.20 or there are 476 reachable nodes out of total 500 nodes in the graph
+22:18:47.854 [main] INFO  - Force reachability: there are 24 orphan nodes in the graph
+22:18:47.860 [main] INFO  - DFS: reachable 477 nodes with 148 loops in the graph
+22:18:47.861 [main] INFO  - The reachability ratio is 95.40 or there are 477 reachable nodes out of total 500 nodes in the graph
+22:18:47.862 [main] INFO  - Force reachability: there are 23 orphan nodes in the graph
+22:18:47.869 [main] INFO  - DFS: reachable 478 nodes with 169 loops in the graph
+22:18:47.870 [main] INFO  - The reachability ratio is 95.60 or there are 478 reachable nodes out of total 500 nodes in the graph
+22:18:47.871 [main] INFO  - Force reachability: there are 22 orphan nodes in the graph
+22:18:47.877 [main] INFO  - DFS: reachable 483 nodes with 164 loops in the graph
+22:18:47.878 [main] INFO  - The reachability ratio is 96.60 or there are 483 reachable nodes out of total 500 nodes in the graph
+22:18:47.879 [main] INFO  - Force reachability: there are 17 orphan nodes in the graph
+22:18:47.885 [main] INFO  - DFS: reachable 484 nodes with 165 loops in the graph
+22:18:47.886 [main] INFO  - The reachability ratio is 96.80 or there are 484 reachable nodes out of total 500 nodes in the graph
+22:18:47.886 [main] INFO  - Force reachability: there are 16 orphan nodes in the graph
+22:18:47.892 [main] INFO  - DFS: reachable 485 nodes with 154 loops in the graph
+22:18:47.893 [main] INFO  - The reachability ratio is 97.00 or there are 485 reachable nodes out of total 500 nodes in the graph
+22:18:47.893 [main] INFO  - Force reachability: there are 15 orphan nodes in the graph
+22:18:47.899 [main] INFO  - DFS: reachable 486 nodes with 157 loops in the graph
+22:18:47.899 [main] INFO  - The reachability ratio is 97.20 or there are 486 reachable nodes out of total 500 nodes in the graph
+22:18:47.899 [main] INFO  - Force reachability: there are 14 orphan nodes in the graph
+22:18:47.905 [main] INFO  - DFS: reachable 487 nodes with 160 loops in the graph
+22:18:47.907 [main] INFO  - The reachability ratio is 97.40 or there are 487 reachable nodes out of total 500 nodes in the graph
+22:18:47.908 [main] INFO  - Force reachability: there are 13 orphan nodes in the graph
+22:18:47.915 [main] INFO  - DFS: reachable 491 nodes with 162 loops in the graph
+22:18:47.915 [main] INFO  - The reachability ratio is 98.20 or there are 491 reachable nodes out of total 500 nodes in the graph
+22:18:47.916 [main] INFO  - Force reachability: there are 9 orphan nodes in the graph
+22:18:47.921 [main] INFO  - DFS: reachable 492 nodes with 162 loops in the graph
+22:18:47.922 [main] INFO  - The reachability ratio is 98.40 or there are 492 reachable nodes out of total 500 nodes in the graph
+22:18:47.922 [main] INFO  - Force reachability: there are 8 orphan nodes in the graph
+22:18:47.928 [main] INFO  - DFS: reachable 493 nodes with 167 loops in the graph
+22:18:47.929 [main] INFO  - The reachability ratio is 98.60 or there are 493 reachable nodes out of total 500 nodes in the graph
+22:18:47.929 [main] INFO  - Force reachability: there are 7 orphan nodes in the graph
+22:18:47.935 [main] INFO  - DFS: reachable 496 nodes with 170 loops in the graph
+22:18:47.936 [main] INFO  - The reachability ratio is 99.20 or there are 496 reachable nodes out of total 500 nodes in the graph
+22:18:47.937 [main] INFO  - Force reachability: there are 4 orphan nodes in the graph
+22:18:47.943 [main] INFO  - DFS: reachable 497 nodes with 170 loops in the graph
+22:18:47.944 [main] INFO  - The reachability ratio is 99.40 or there are 497 reachable nodes out of total 500 nodes in the graph
+22:18:47.945 [main] INFO  - Force reachability: there are 3 orphan nodes in the graph
+22:18:47.951 [main] INFO  - DFS: reachable 498 nodes with 173 loops in the graph
+22:18:47.952 [main] INFO  - The reachability ratio is 99.60 or there are 498 reachable nodes out of total 500 nodes in the graph
+22:18:47.953 [main] INFO  - Force reachability: there are 2 orphan nodes in the graph
+22:18:47.959 [main] INFO  - DFS: reachable 500 nodes with 155 loops in the graph
+22:18:47.960 [main] INFO  - The reachability ratio is 100.00 or there are 500 reachable nodes out of total 500 nodes in the graph
+22:18:47.960 [main] INFO  - Force reachability: there are 0 orphan nodes in the graph
+22:18:47.979 [main] ERROR - Failed to persist the graph to C:\Users\yortb\Desktop\cs441\parseGraph\graphs\NetGraph_21-09-23-22-18-47.ngs : 
+java.io.FileNotFoundException: C:\Users\yortb\Desktop\cs441\parseGraph\graphs\NetGraph_21-09-23-22-18-47.ngs (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:158)
+	at NetGraphAlgebraDefs.GraphStore.persist$$anonfun$1(GraphStore.scala:28)
+	at scala.util.Try$.apply(Try.scala:210)
+	at NetGraphAlgebraDefs.GraphStore.persist(GraphStore.scala:28)
+	at NetGraphAlgebraDefs.GraphStore.persist$(GraphStore.scala:18)
+	at NetGraphAlgebraDefs.NetGraph.persist(NetGraph.scala:23)
+	at Main$.main(Main.scala:7)
+	at Main.main(Main.scala)
+22:19:20.198 [main] INFO  - Default output directory: G:\cs441\parseGraph
+22:19:20.200 [main] ERROR - Output directory /Users/drmark/Library/CloudStorage/OneDrive-UniversityofIllinoisChicago/Github/NetGameSim/outputs does not exist or is not a directory, using current directory instead: G:\cs441\parseGraph
+22:19:20.509 [main] INFO  - Generating a random graph with 500 nodes and ensuring 100.0% reachability
+22:19:20.595 [scala-execution-context-global-16] INFO  - Random value generator created with the seed Some(100)
+22:19:20.808 [main] INFO  - Inserting 500 created nodes into the graph
+22:19:20.813 [main] INFO  - Created 500 nodes
+22:19:20.995 [main] INFO  - Ready to generate 244 edge candidates
+22:19:21.009 [main] INFO  - Generated 244 edge candidates out of 250000 possible combinations
+22:19:21.015 [main] INFO  - Generated graph with 500 nodes and 243 edges
+22:19:21.033 [main] INFO  - Added edge from the init node to 340
+22:19:21.033 [main] INFO  - Added edge from the init node to 3
+22:19:21.033 [main] INFO  - Linked the init node to 2 nodes
+22:19:21.038 [main] INFO  - Added init state connected with 2 nodes
+22:19:21.055 [main] INFO  - DFS: reachable 12 nodes with 0 loops in the graph
+22:19:21.063 [main] INFO  - The reachability ratio is 2.40 or there are 12 reachable nodes out of total 500 nodes in the graph
+22:19:21.070 [main] INFO  - Force reachability: there are 488 orphan nodes in the graph
+22:19:21.140 [main] INFO  - DFS: reachable 13 nodes with 0 loops in the graph
+22:19:21.141 [main] INFO  - The reachability ratio is 2.60 or there are 13 reachable nodes out of total 500 nodes in the graph
+22:19:21.142 [main] INFO  - Force reachability: there are 487 orphan nodes in the graph
+22:19:21.193 [main] INFO  - DFS: reachable 242 nodes with 13 loops in the graph
+22:19:21.194 [main] INFO  - The reachability ratio is 48.40 or there are 242 reachable nodes out of total 500 nodes in the graph
+22:19:21.195 [main] INFO  - Force reachability: there are 258 orphan nodes in the graph
+22:19:21.222 [main] INFO  - DFS: reachable 243 nodes with 13 loops in the graph
+22:19:21.223 [main] INFO  - The reachability ratio is 48.60 or there are 243 reachable nodes out of total 500 nodes in the graph
+22:19:21.225 [main] INFO  - Force reachability: there are 257 orphan nodes in the graph
+22:19:21.241 [main] INFO  - DFS: reachable 244 nodes with 13 loops in the graph
+22:19:21.242 [main] INFO  - The reachability ratio is 48.80 or there are 244 reachable nodes out of total 500 nodes in the graph
+22:19:21.243 [main] INFO  - Force reachability: there are 256 orphan nodes in the graph
+22:19:21.261 [main] INFO  - DFS: reachable 383 nodes with 32 loops in the graph
+22:19:21.262 [main] INFO  - The reachability ratio is 76.60 or there are 383 reachable nodes out of total 500 nodes in the graph
+22:19:21.263 [main] INFO  - Force reachability: there are 117 orphan nodes in the graph
+22:19:21.272 [main] INFO  - DFS: reachable 386 nodes with 33 loops in the graph
+22:19:21.272 [main] INFO  - The reachability ratio is 77.20 or there are 386 reachable nodes out of total 500 nodes in the graph
+22:19:21.273 [main] INFO  - Force reachability: there are 114 orphan nodes in the graph
+22:19:21.282 [main] INFO  - DFS: reachable 402 nodes with 33 loops in the graph
+22:19:21.283 [main] INFO  - The reachability ratio is 80.40 or there are 402 reachable nodes out of total 500 nodes in the graph
+22:19:21.283 [main] INFO  - Force reachability: there are 98 orphan nodes in the graph
+22:19:21.290 [main] INFO  - DFS: reachable 403 nodes with 40 loops in the graph
+22:19:21.291 [main] INFO  - The reachability ratio is 80.60 or there are 403 reachable nodes out of total 500 nodes in the graph
+22:19:21.292 [main] INFO  - Force reachability: there are 97 orphan nodes in the graph
+22:19:21.299 [main] INFO  - DFS: reachable 404 nodes with 37 loops in the graph
+22:19:21.300 [main] INFO  - The reachability ratio is 80.80 or there are 404 reachable nodes out of total 500 nodes in the graph
+22:19:21.301 [main] INFO  - Force reachability: there are 96 orphan nodes in the graph
+22:19:21.308 [main] INFO  - DFS: reachable 407 nodes with 38 loops in the graph
+22:19:21.309 [main] INFO  - The reachability ratio is 81.40 or there are 407 reachable nodes out of total 500 nodes in the graph
+22:19:21.310 [main] INFO  - Force reachability: there are 93 orphan nodes in the graph
+22:19:21.317 [main] INFO  - DFS: reachable 410 nodes with 39 loops in the graph
+22:19:21.318 [main] INFO  - The reachability ratio is 82.00 or there are 410 reachable nodes out of total 500 nodes in the graph
+22:19:21.318 [main] INFO  - Force reachability: there are 90 orphan nodes in the graph
+22:19:21.324 [main] INFO  - DFS: reachable 412 nodes with 39 loops in the graph
+22:19:21.324 [main] INFO  - The reachability ratio is 82.40 or there are 412 reachable nodes out of total 500 nodes in the graph
+22:19:21.325 [main] INFO  - Force reachability: there are 88 orphan nodes in the graph
+22:19:21.330 [main] INFO  - DFS: reachable 417 nodes with 39 loops in the graph
+22:19:21.331 [main] INFO  - The reachability ratio is 83.40 or there are 417 reachable nodes out of total 500 nodes in the graph
+22:19:21.331 [main] INFO  - Force reachability: there are 83 orphan nodes in the graph
+22:19:21.336 [main] INFO  - DFS: reachable 462 nodes with 46 loops in the graph
+22:19:21.337 [main] INFO  - The reachability ratio is 92.40 or there are 462 reachable nodes out of total 500 nodes in the graph
+22:19:21.337 [main] INFO  - Force reachability: there are 38 orphan nodes in the graph
+22:19:21.342 [main] INFO  - DFS: reachable 463 nodes with 50 loops in the graph
+22:19:21.343 [main] INFO  - The reachability ratio is 92.60 or there are 463 reachable nodes out of total 500 nodes in the graph
+22:19:21.343 [main] INFO  - Force reachability: there are 37 orphan nodes in the graph
+22:19:21.347 [main] INFO  - DFS: reachable 470 nodes with 50 loops in the graph
+22:19:21.348 [main] INFO  - The reachability ratio is 94.00 or there are 470 reachable nodes out of total 500 nodes in the graph
+22:19:21.348 [main] INFO  - Force reachability: there are 30 orphan nodes in the graph
+22:19:21.353 [main] INFO  - DFS: reachable 471 nodes with 55 loops in the graph
+22:19:21.353 [main] INFO  - The reachability ratio is 94.20 or there are 471 reachable nodes out of total 500 nodes in the graph
+22:19:21.353 [main] INFO  - Force reachability: there are 29 orphan nodes in the graph
+22:19:21.357 [main] INFO  - DFS: reachable 475 nodes with 61 loops in the graph
+22:19:21.357 [main] INFO  - The reachability ratio is 95.00 or there are 475 reachable nodes out of total 500 nodes in the graph
+22:19:21.358 [main] INFO  - Force reachability: there are 25 orphan nodes in the graph
+22:19:21.361 [main] INFO  - DFS: reachable 476 nodes with 61 loops in the graph
+22:19:21.362 [main] INFO  - The reachability ratio is 95.20 or there are 476 reachable nodes out of total 500 nodes in the graph
+22:19:21.362 [main] INFO  - Force reachability: there are 24 orphan nodes in the graph
+22:19:21.366 [main] INFO  - DFS: reachable 479 nodes with 64 loops in the graph
+22:19:21.367 [main] INFO  - The reachability ratio is 95.80 or there are 479 reachable nodes out of total 500 nodes in the graph
+22:19:21.367 [main] INFO  - Force reachability: there are 21 orphan nodes in the graph
+22:19:21.371 [main] INFO  - DFS: reachable 482 nodes with 72 loops in the graph
+22:19:21.371 [main] INFO  - The reachability ratio is 96.40 or there are 482 reachable nodes out of total 500 nodes in the graph
+22:19:21.372 [main] INFO  - Force reachability: there are 18 orphan nodes in the graph
+22:19:21.376 [main] INFO  - DFS: reachable 483 nodes with 72 loops in the graph
+22:19:21.376 [main] INFO  - The reachability ratio is 96.60 or there are 483 reachable nodes out of total 500 nodes in the graph
+22:19:21.377 [main] INFO  - Force reachability: there are 17 orphan nodes in the graph
+22:19:21.380 [main] INFO  - DFS: reachable 484 nodes with 72 loops in the graph
+22:19:21.381 [main] INFO  - The reachability ratio is 96.80 or there are 484 reachable nodes out of total 500 nodes in the graph
+22:19:21.381 [main] INFO  - Force reachability: there are 16 orphan nodes in the graph
+22:19:21.384 [main] INFO  - DFS: reachable 485 nodes with 72 loops in the graph
+22:19:21.384 [main] INFO  - The reachability ratio is 97.00 or there are 485 reachable nodes out of total 500 nodes in the graph
+22:19:21.385 [main] INFO  - Force reachability: there are 15 orphan nodes in the graph
+22:19:21.388 [main] INFO  - DFS: reachable 487 nodes with 71 loops in the graph
+22:19:21.388 [main] INFO  - The reachability ratio is 97.40 or there are 487 reachable nodes out of total 500 nodes in the graph
+22:19:21.388 [main] INFO  - Force reachability: there are 13 orphan nodes in the graph
+22:19:21.391 [main] INFO  - DFS: reachable 488 nodes with 70 loops in the graph
+22:19:21.392 [main] INFO  - The reachability ratio is 97.60 or there are 488 reachable nodes out of total 500 nodes in the graph
+22:19:21.392 [main] INFO  - Force reachability: there are 12 orphan nodes in the graph
+22:19:21.395 [main] INFO  - DFS: reachable 489 nodes with 70 loops in the graph
+22:19:21.395 [main] INFO  - The reachability ratio is 97.80 or there are 489 reachable nodes out of total 500 nodes in the graph
+22:19:21.396 [main] INFO  - Force reachability: there are 11 orphan nodes in the graph
+22:19:21.399 [main] INFO  - DFS: reachable 490 nodes with 69 loops in the graph
+22:19:21.400 [main] INFO  - The reachability ratio is 98.00 or there are 490 reachable nodes out of total 500 nodes in the graph
+22:19:21.400 [main] INFO  - Force reachability: there are 10 orphan nodes in the graph
+22:19:21.403 [main] INFO  - DFS: reachable 492 nodes with 85 loops in the graph
+22:19:21.404 [main] INFO  - The reachability ratio is 98.40 or there are 492 reachable nodes out of total 500 nodes in the graph
+22:19:21.404 [main] INFO  - Force reachability: there are 8 orphan nodes in the graph
+22:19:21.408 [main] INFO  - DFS: reachable 493 nodes with 88 loops in the graph
+22:19:21.409 [main] INFO  - The reachability ratio is 98.60 or there are 493 reachable nodes out of total 500 nodes in the graph
+22:19:21.409 [main] INFO  - Force reachability: there are 7 orphan nodes in the graph
+22:19:21.412 [main] INFO  - DFS: reachable 494 nodes with 97 loops in the graph
+22:19:21.413 [main] INFO  - The reachability ratio is 98.80 or there are 494 reachable nodes out of total 500 nodes in the graph
+22:19:21.413 [main] INFO  - Force reachability: there are 6 orphan nodes in the graph
+22:19:21.417 [main] INFO  - DFS: reachable 495 nodes with 97 loops in the graph
+22:19:21.418 [main] INFO  - The reachability ratio is 99.00 or there are 495 reachable nodes out of total 500 nodes in the graph
+22:19:21.418 [main] INFO  - Force reachability: there are 5 orphan nodes in the graph
+22:19:21.420 [main] INFO  - DFS: reachable 497 nodes with 100 loops in the graph
+22:19:21.421 [main] INFO  - The reachability ratio is 99.40 or there are 497 reachable nodes out of total 500 nodes in the graph
+22:19:21.421 [main] INFO  - Force reachability: there are 3 orphan nodes in the graph
+22:19:21.424 [main] INFO  - DFS: reachable 498 nodes with 108 loops in the graph
+22:19:21.425 [main] INFO  - The reachability ratio is 99.60 or there are 498 reachable nodes out of total 500 nodes in the graph
+22:19:21.425 [main] INFO  - Force reachability: there are 2 orphan nodes in the graph
+22:19:21.429 [main] INFO  - DFS: reachable 500 nodes with 106 loops in the graph
+22:19:21.430 [main] INFO  - The reachability ratio is 100.00 or there are 500 reachable nodes out of total 500 nodes in the graph
+22:19:21.430 [main] INFO  - Force reachability: there are 0 orphan nodes in the graph
+22:19:21.451 [main] ERROR - Failed to persist the graph to C:\Users\yortb\Desktop\cs441\parseGraph\graphs\NetGraph_21-09-23-22-19-21.ngs : 
+java.io.FileNotFoundException: C:\Users\yortb\Desktop\cs441\parseGraph\graphs\NetGraph_21-09-23-22-19-21.ngs (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:158)
+	at NetGraphAlgebraDefs.GraphStore.persist$$anonfun$1(GraphStore.scala:28)
+	at scala.util.Try$.apply(Try.scala:210)
+	at NetGraphAlgebraDefs.GraphStore.persist(GraphStore.scala:28)
+	at NetGraphAlgebraDefs.GraphStore.persist$(GraphStore.scala:18)
+	at NetGraphAlgebraDefs.NetGraph.persist(NetGraph.scala:23)
+	at Main$.main(Main.scala:7)
+	at Main.main(Main.scala)
