@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/parseGraph.iml" filepath="$PROJECT_DIR$/.idea/modules/parseGraph.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/parseGraph-build.iml" filepath="$PROJECT_DIR$/.idea/modules/parseGraph-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/graphComparison.iml" filepath="$PROJECT_DIR$/.idea/modules/graphComparison.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/graphComparison-build.iml" filepath="$PROJECT_DIR$/.idea/modules/graphComparison-build.iml" />
     </modules>
   </component>
 </project>

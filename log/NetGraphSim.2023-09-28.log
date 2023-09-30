@@ -1,0 +1,136 @@
+17:02:13.843 [main] INFO  - Default output directory: G:\cs441\parseGraph
+17:02:13.846 [main] INFO  - Using output directory: graphs
+17:02:14.377 [main] INFO  - Generating a random graph with 10 nodes and ensuring 100.0% reachability
+17:02:14.508 [scala-execution-context-global-17] INFO  - Random value generator created with the seed Some(100)
+17:02:14.574 [main] INFO  - Inserting 10 created nodes into the graph
+17:02:14.578 [main] INFO  - Created 10 nodes
+17:02:14.678 [main] INFO  - Ready to generate 0 edge candidates
+17:02:14.681 [main] INFO  - Generated 0 edge candidates out of 100 possible combinations
+17:02:14.685 [main] INFO  - Generated graph with 10 nodes and 0 edges
+17:02:14.728 [main] INFO  - Added edge from the init node to 1
+17:02:14.729 [main] INFO  - Added edge from the init node to 2
+17:02:14.729 [main] INFO  - Linked the init node to 2 nodes
+17:02:14.733 [main] INFO  - Added init state connected with 2 nodes
+17:02:14.746 [main] INFO  - DFS: reachable 2 nodes with 0 loops in the graph
+17:02:14.761 [main] INFO  - The reachability ratio is 20.00 or there are 2 reachable nodes out of total 10 nodes in the graph
+17:02:14.766 [main] INFO  - Force reachability: there are 8 orphan nodes in the graph
+17:02:14.780 [main] INFO  - DFS: reachable 3 nodes with 0 loops in the graph
+17:02:14.781 [main] INFO  - The reachability ratio is 30.00 or there are 3 reachable nodes out of total 10 nodes in the graph
+17:02:14.782 [main] INFO  - Force reachability: there are 7 orphan nodes in the graph
+17:02:14.789 [main] INFO  - DFS: reachable 4 nodes with 0 loops in the graph
+17:02:14.789 [main] INFO  - The reachability ratio is 40.00 or there are 4 reachable nodes out of total 10 nodes in the graph
+17:02:14.790 [main] INFO  - Force reachability: there are 6 orphan nodes in the graph
+17:02:14.801 [main] INFO  - DFS: reachable 5 nodes with 0 loops in the graph
+17:02:14.802 [main] INFO  - The reachability ratio is 50.00 or there are 5 reachable nodes out of total 10 nodes in the graph
+17:02:14.802 [main] INFO  - Force reachability: there are 5 orphan nodes in the graph
+17:02:14.806 [main] INFO  - DFS: reachable 6 nodes with 0 loops in the graph
+17:02:14.807 [main] INFO  - The reachability ratio is 60.00 or there are 6 reachable nodes out of total 10 nodes in the graph
+17:02:14.807 [main] INFO  - Force reachability: there are 4 orphan nodes in the graph
+17:02:14.810 [main] INFO  - DFS: reachable 7 nodes with 0 loops in the graph
+17:02:14.811 [main] INFO  - The reachability ratio is 70.00 or there are 7 reachable nodes out of total 10 nodes in the graph
+17:02:14.811 [main] INFO  - Force reachability: there are 3 orphan nodes in the graph
+17:02:14.814 [main] INFO  - DFS: reachable 8 nodes with 0 loops in the graph
+17:02:14.815 [main] INFO  - The reachability ratio is 80.00 or there are 8 reachable nodes out of total 10 nodes in the graph
+17:02:14.815 [main] INFO  - Force reachability: there are 2 orphan nodes in the graph
+17:02:14.818 [main] INFO  - DFS: reachable 9 nodes with 0 loops in the graph
+17:02:14.818 [main] INFO  - The reachability ratio is 90.00 or there are 9 reachable nodes out of total 10 nodes in the graph
+17:02:14.828 [main] INFO  - Force reachability: there are 1 orphan nodes in the graph
+17:02:14.831 [main] INFO  - DFS: reachable 10 nodes with 0 loops in the graph
+17:02:14.831 [main] INFO  - The reachability ratio is 100.00 or there are 10 reachable nodes out of total 10 nodes in the graph
+17:02:14.831 [main] INFO  - Force reachability: there are 0 orphan nodes in the graph
+17:02:14.909 [main] INFO  - Successfully persisted the graph to graphs/NetGraph_28-09-23-17-02-14.ngs
+17:02:15.236 [main] INFO  - Successfully rendered the graph to graphs/NetGraph_28-09-23-17-02-14.ngs.dot
+17:02:20.081 [main] INFO  - Out of the 7 nodes, perturbations will be applied to 1 nodes
+17:02:20.099 [main] INFO  - Applying perturbation REMOVENODE on node NodeObject(4,5,11,1,2,2,5,10,0.19687396758327136)
+17:03:37.479 [main] INFO  - Default output directory: G:\cs441\parseGraph
+17:03:37.481 [main] INFO  - Using output directory: graphs
+17:03:37.913 [main] INFO  - Generating a random graph with 10 nodes and ensuring 100.0% reachability
+17:03:38.053 [scala-execution-context-global-18] INFO  - Random value generator created with the seed Some(100)
+17:03:38.109 [main] INFO  - Inserting 10 created nodes into the graph
+17:03:38.111 [main] INFO  - Created 10 nodes
+17:03:38.195 [main] INFO  - Ready to generate 0 edge candidates
+17:03:38.197 [main] INFO  - Generated 0 edge candidates out of 100 possible combinations
+17:03:38.201 [main] INFO  - Generated graph with 10 nodes and 0 edges
+17:03:38.230 [main] INFO  - Added edge from the init node to 1
+17:03:38.230 [main] INFO  - Added edge from the init node to 2
+17:03:38.230 [main] INFO  - Linked the init node to 2 nodes
+17:03:38.235 [main] INFO  - Added init state connected with 2 nodes
+17:03:38.247 [main] INFO  - DFS: reachable 2 nodes with 0 loops in the graph
+17:03:38.263 [main] INFO  - The reachability ratio is 20.00 or there are 2 reachable nodes out of total 10 nodes in the graph
+17:03:38.267 [main] INFO  - Force reachability: there are 8 orphan nodes in the graph
+17:03:38.300 [main] INFO  - DFS: reachable 3 nodes with 0 loops in the graph
+17:03:38.301 [main] INFO  - The reachability ratio is 30.00 or there are 3 reachable nodes out of total 10 nodes in the graph
+17:03:38.303 [main] INFO  - Force reachability: there are 7 orphan nodes in the graph
+17:03:38.310 [main] INFO  - DFS: reachable 4 nodes with 0 loops in the graph
+17:03:38.311 [main] INFO  - The reachability ratio is 40.00 or there are 4 reachable nodes out of total 10 nodes in the graph
+17:03:38.312 [main] INFO  - Force reachability: there are 6 orphan nodes in the graph
+17:03:38.320 [main] INFO  - DFS: reachable 5 nodes with 0 loops in the graph
+17:03:38.321 [main] INFO  - The reachability ratio is 50.00 or there are 5 reachable nodes out of total 10 nodes in the graph
+17:03:38.333 [main] INFO  - Force reachability: there are 5 orphan nodes in the graph
+17:03:38.339 [main] INFO  - DFS: reachable 6 nodes with 0 loops in the graph
+17:03:38.340 [main] INFO  - The reachability ratio is 60.00 or there are 6 reachable nodes out of total 10 nodes in the graph
+17:03:38.340 [main] INFO  - Force reachability: there are 4 orphan nodes in the graph
+17:03:38.346 [main] INFO  - DFS: reachable 7 nodes with 0 loops in the graph
+17:03:38.347 [main] INFO  - The reachability ratio is 70.00 or there are 7 reachable nodes out of total 10 nodes in the graph
+17:03:38.347 [main] INFO  - Force reachability: there are 3 orphan nodes in the graph
+17:03:38.351 [main] INFO  - DFS: reachable 8 nodes with 0 loops in the graph
+17:03:38.352 [main] INFO  - The reachability ratio is 80.00 or there are 8 reachable nodes out of total 10 nodes in the graph
+17:03:38.352 [main] INFO  - Force reachability: there are 2 orphan nodes in the graph
+17:03:38.361 [main] INFO  - DFS: reachable 9 nodes with 0 loops in the graph
+17:03:38.365 [main] INFO  - The reachability ratio is 90.00 or there are 9 reachable nodes out of total 10 nodes in the graph
+17:03:38.366 [main] INFO  - Force reachability: there are 1 orphan nodes in the graph
+17:03:38.368 [main] INFO  - DFS: reachable 10 nodes with 0 loops in the graph
+17:03:38.369 [main] INFO  - The reachability ratio is 100.00 or there are 10 reachable nodes out of total 10 nodes in the graph
+17:03:38.370 [main] INFO  - Force reachability: there are 0 orphan nodes in the graph
+17:03:38.483 [main] INFO  - Successfully persisted the graph to graphs/NetGraph_28-09-23-17-03-38.ngs
+17:03:38.630 [main] INFO  - Successfully rendered the graph to graphs/NetGraph_28-09-23-17-03-38.ngs.dot
+17:03:47.224 [main] INFO  - Out of the 7 nodes, perturbations will be applied to 0 nodes
+17:07:39.423 [main] INFO  - Default output directory: G:\cs441\parseGraph
+17:07:39.425 [main] INFO  - Using output directory: graphs
+17:07:39.750 [main] INFO  - Generating a random graph with 10 nodes and ensuring 100.0% reachability
+17:07:39.847 [scala-execution-context-global-22] INFO  - Random value generator created with the seed Some(100)
+17:07:39.890 [main] INFO  - Inserting 10 created nodes into the graph
+17:07:39.892 [main] INFO  - Created 10 nodes
+17:07:39.960 [main] INFO  - Ready to generate 0 edge candidates
+17:07:39.962 [main] INFO  - Generated 0 edge candidates out of 100 possible combinations
+17:07:39.966 [main] INFO  - Generated graph with 10 nodes and 0 edges
+17:07:39.985 [main] INFO  - Added edge from the init node to 1
+17:07:39.986 [main] INFO  - Added edge from the init node to 2
+17:07:39.986 [main] INFO  - Linked the init node to 2 nodes
+17:07:39.989 [main] INFO  - Added init state connected with 2 nodes
+17:07:39.999 [main] INFO  - DFS: reachable 2 nodes with 0 loops in the graph
+17:07:40.012 [main] INFO  - The reachability ratio is 20.00 or there are 2 reachable nodes out of total 10 nodes in the graph
+17:07:40.015 [main] INFO  - Force reachability: there are 8 orphan nodes in the graph
+17:07:40.024 [main] INFO  - DFS: reachable 3 nodes with 0 loops in the graph
+17:07:40.025 [main] INFO  - The reachability ratio is 30.00 or there are 3 reachable nodes out of total 10 nodes in the graph
+17:07:40.026 [main] INFO  - Force reachability: there are 7 orphan nodes in the graph
+17:07:40.031 [main] INFO  - DFS: reachable 4 nodes with 0 loops in the graph
+17:07:40.031 [main] INFO  - The reachability ratio is 40.00 or there are 4 reachable nodes out of total 10 nodes in the graph
+17:07:40.032 [main] INFO  - Force reachability: there are 6 orphan nodes in the graph
+17:07:40.037 [main] INFO  - DFS: reachable 5 nodes with 0 loops in the graph
+17:07:40.038 [main] INFO  - The reachability ratio is 50.00 or there are 5 reachable nodes out of total 10 nodes in the graph
+17:07:40.039 [main] INFO  - Force reachability: there are 5 orphan nodes in the graph
+17:07:40.042 [main] INFO  - DFS: reachable 6 nodes with 0 loops in the graph
+17:07:40.043 [main] INFO  - The reachability ratio is 60.00 or there are 6 reachable nodes out of total 10 nodes in the graph
+17:07:40.043 [main] INFO  - Force reachability: there are 4 orphan nodes in the graph
+17:07:40.047 [main] INFO  - DFS: reachable 7 nodes with 0 loops in the graph
+17:07:40.047 [main] INFO  - The reachability ratio is 70.00 or there are 7 reachable nodes out of total 10 nodes in the graph
+17:07:40.047 [main] INFO  - Force reachability: there are 3 orphan nodes in the graph
+17:07:40.050 [main] INFO  - DFS: reachable 8 nodes with 0 loops in the graph
+17:07:40.050 [main] INFO  - The reachability ratio is 80.00 or there are 8 reachable nodes out of total 10 nodes in the graph
+17:07:40.051 [main] INFO  - Force reachability: there are 2 orphan nodes in the graph
+17:07:40.053 [main] INFO  - DFS: reachable 9 nodes with 0 loops in the graph
+17:07:40.053 [main] INFO  - The reachability ratio is 90.00 or there are 9 reachable nodes out of total 10 nodes in the graph
+17:07:40.060 [main] INFO  - Force reachability: there are 1 orphan nodes in the graph
+17:07:40.062 [main] INFO  - DFS: reachable 10 nodes with 0 loops in the graph
+17:07:40.062 [main] INFO  - The reachability ratio is 100.00 or there are 10 reachable nodes out of total 10 nodes in the graph
+17:07:40.062 [main] INFO  - Force reachability: there are 0 orphan nodes in the graph
+17:07:40.112 [main] INFO  - Successfully persisted the graph to graphs/NetGraph_28-09-23-17-07-40.ngs
+17:07:40.298 [main] INFO  - Successfully rendered the graph to graphs/NetGraph_28-09-23-17-07-40.ngs.dot
+17:07:42.829 [main] INFO  - Out of the 7 nodes, perturbations will be applied to 1 nodes
+17:07:42.843 [main] INFO  - Applying perturbation REMOVENODE on node NodeObject(8,5,8,1,28,4,1,4,0.7668421593545364)
+17:07:44.057 [main] INFO  - Successfully persisted the graph to graphs/NetGraph_28-09-23-17-07-40.ngs.perturbed
+17:07:46.615 [main] INFO  - Successfully rendered the graph to graphs/NetGraph_28-09-23-17-07-40.ngs.perturbed.dot
+17:08:01.794 [main] INFO  - 1 nodes and 1 edges have been perturbed
+17:08:01.802 [main] INFO  - There are 0 modified nodes, 0 added nodes and 1 removed nodes.
+17:08:01.803 [main] INFO  - There are 0 modified edges, 0 added edges and 1 removed edges.
