@@ -1,0 +1,49 @@
+12:51:52.708 [main] INFO  - Default output directory: G:\cs441\parseGraph
+12:51:52.710 [main] INFO  - Using output directory: graphs
+12:51:52.899 [main] INFO  - Generating a random graph with 10 nodes and ensuring 100.0% reachability
+12:51:53.034 [scala-execution-context-global-15] INFO  - Random value generator created with the seed Some(100)
+12:51:53.094 [main] INFO  - Inserting 10 created nodes into the graph
+12:51:53.096 [main] INFO  - Created 10 nodes
+12:51:53.160 [main] INFO  - Ready to generate 0 edge candidates
+12:51:53.162 [main] INFO  - Generated 0 edge candidates out of 100 possible combinations
+12:51:53.166 [main] INFO  - Generated graph with 10 nodes and 0 edges
+12:51:53.190 [main] INFO  - Added edge from the init node to 1
+12:51:53.191 [main] INFO  - Added edge from the init node to 2
+12:51:53.191 [main] INFO  - Linked the init node to 2 nodes
+12:51:53.194 [main] INFO  - Added init state connected with 2 nodes
+12:51:53.204 [main] INFO  - DFS: reachable 2 nodes with 0 loops in the graph
+12:51:53.215 [main] INFO  - The reachability ratio is 20.00 or there are 2 reachable nodes out of total 10 nodes in the graph
+12:51:53.218 [main] INFO  - Force reachability: there are 8 orphan nodes in the graph
+12:51:53.225 [main] INFO  - DFS: reachable 3 nodes with 0 loops in the graph
+12:51:53.226 [main] INFO  - The reachability ratio is 30.00 or there are 3 reachable nodes out of total 10 nodes in the graph
+12:51:53.226 [main] INFO  - Force reachability: there are 7 orphan nodes in the graph
+12:51:53.230 [main] INFO  - DFS: reachable 4 nodes with 0 loops in the graph
+12:51:53.230 [main] INFO  - The reachability ratio is 40.00 or there are 4 reachable nodes out of total 10 nodes in the graph
+12:51:53.231 [main] INFO  - Force reachability: there are 6 orphan nodes in the graph
+12:51:53.235 [main] INFO  - DFS: reachable 5 nodes with 0 loops in the graph
+12:51:53.235 [main] INFO  - The reachability ratio is 50.00 or there are 5 reachable nodes out of total 10 nodes in the graph
+12:51:53.235 [main] INFO  - Force reachability: there are 5 orphan nodes in the graph
+12:51:53.238 [main] INFO  - DFS: reachable 6 nodes with 0 loops in the graph
+12:51:53.238 [main] INFO  - The reachability ratio is 60.00 or there are 6 reachable nodes out of total 10 nodes in the graph
+12:51:53.238 [main] INFO  - Force reachability: there are 4 orphan nodes in the graph
+12:51:53.241 [main] INFO  - DFS: reachable 7 nodes with 0 loops in the graph
+12:51:53.241 [main] INFO  - The reachability ratio is 70.00 or there are 7 reachable nodes out of total 10 nodes in the graph
+12:51:53.241 [main] INFO  - Force reachability: there are 3 orphan nodes in the graph
+12:51:53.243 [main] INFO  - DFS: reachable 8 nodes with 0 loops in the graph
+12:51:53.243 [main] INFO  - The reachability ratio is 80.00 or there are 8 reachable nodes out of total 10 nodes in the graph
+12:51:53.243 [main] INFO  - Force reachability: there are 2 orphan nodes in the graph
+12:51:53.245 [main] INFO  - DFS: reachable 9 nodes with 0 loops in the graph
+12:51:53.245 [main] INFO  - The reachability ratio is 90.00 or there are 9 reachable nodes out of total 10 nodes in the graph
+12:51:53.251 [main] INFO  - Force reachability: there are 1 orphan nodes in the graph
+12:51:53.253 [main] INFO  - DFS: reachable 10 nodes with 0 loops in the graph
+12:51:53.253 [main] INFO  - The reachability ratio is 100.00 or there are 10 reachable nodes out of total 10 nodes in the graph
+12:51:53.253 [main] INFO  - Force reachability: there are 0 orphan nodes in the graph
+12:51:53.295 [main] INFO  - Successfully persisted the graph to graphs/NetGraph_30-09-23-12-51-53.ngs
+12:51:53.317 [main] INFO  - Out of the 7 nodes, perturbations will be applied to 1 nodes
+12:51:53.320 [main] INFO  - Applying perturbation REMOVENODE on node NodeObject(8,2,6,1,99,1,6,10,0.5292108422589404)
+12:51:53.333 [main] INFO  - Successfully persisted the graph to graphs/NetGraph_30-09-23-12-51-53.ngs.perturbed
+12:51:53.336 [main] INFO  - 1 nodes and 2 edges have been perturbed
+12:51:53.337 [main] INFO  - There are 0 modified nodes, 0 added nodes and 1 removed nodes.
+12:51:53.337 [main] INFO  - There are 0 modified edges, 0 added edges and 2 removed edges.
+12:51:53.343 [main] INFO  - Loading the NetGraph from graphs/NetGraph_30-09-23-12-51-53.ngs
+12:51:53.369 [main] INFO  - Loading the NetGraph from graphs/NetGraph_30-09-23-12-51-53.ngs.perturbed
