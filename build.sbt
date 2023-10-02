@@ -42,7 +42,11 @@ cleanProject := {
   directoriesToDelete.foreach { dir =>
     if (dir.exists()) {
       log.info(s"Deleting contents of ${dir.absolutePath}")
-      IO.delete((dir ** "*").get)
+      (dir ** "*").get.foreach( file =>
+      if (file != dir) {
+        IO.delete(file)
+      }
+      )
     }
   }
 }
@@ -57,3 +61,7 @@ mainClass in Compile := Some("Main")
 unmanagedBase := baseDirectory.value / "src" / "main" / "resources" / "lib"
 
 libraryDependencies ++= commonDependencies
+
+clean := {
+  clean.dependsOn(cleanProject).value
+}
