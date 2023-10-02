@@ -5,12 +5,16 @@ import NetGraphAlgebraDefs.NetModelAlgebra.{outputDirectory, perturbationCoeff, 
 import Utilz.NGSConstants
 import com.typesafe.config.ConfigFactory
 
-import java.io.File
+import java.io.{DataInput, DataInputStream, DataOutput, DataOutputStream, File, FileInputStream, FileOutputStream}
 import scala.collection.mutable
 import scala.collection.mutable.Set
 import scala.jdk.CollectionConverters.*
 import scala.math.max
+import models.Shard
+import org.slf4j.LoggerFactory
+
 object Processor{
+  private val logger = LoggerFactory.getLogger(Processor.getClass)
   // generate graph
   // perturb graph
   // pair every subgraph in original with every subgraph in perturbed
@@ -28,16 +32,45 @@ object Processor{
     GraphPerturbationAlgebra.persist(changes, outputDirectory.concat(graphName.concat(".yaml")))
     (graphName, graphName+".perturbed")
   }
-  def splitGraphs(graphName: String, perturbedGraphName: String): ( List[mutable.Set[NodeObject]],  List[mutable.Set[NodeObject]]) = {
+  def createShards(graphName: String, perturbedGraphName: String): Int = {
     val config = ConfigFactory.load()
     val subGraphRatio = config.getDouble("Preprocessor.subGraphRatio")
     val minSubGraphSize = config.getInt("Preprocessor.minSubGraphSize")
+    val shardDirectory = config.getString("Preprocessor.shardDirectory")
     val graph = NetGraph.load(fileName = graphName).get
     val perturbedGraph = NetGraph.load(fileName = perturbedGraphName).get
     val subGraphs = graph.sm.nodes().asScala.grouped(max(minSubGraphSize, (graph.totalNodes * subGraphRatio).toInt)).toList
+    logger.info(s"Split original graph into ${subGraphs.size} sub-graphs")
     val perturbedSubGraphs = perturbedGraph.sm.nodes().asScala.grouped(max(minSubGraphSize, (perturbedGraph.totalNodes * subGraphRatio).toInt)).toList
+    logger.info(s"Split perturbed graph into ${perturbedSubGraphs.size} sub-graphs")
     // serialize sub graphs and deserialize them in driver
     (subGraphs, perturbedSubGraphs)
+    var shardID = 0
+    val shards: List[Shard] = subGraphs.flatMap(subgraph => perturbedSubGraphs.map(perturbedSubGraph => {
+      shardID += 1
+      Shard(shardID, subgraph.toSet, perturbedSubGraph.toSet)
+    }))
+    logger.info(s"Created ${shards.size} shards")
+
+    shards.foreach(shard => {
+      // create file named shard-{NUM OF SHARD}
+      val out = new FileOutputStream(shardDirectory + "/" + "shard-"+shard.id)
+      val dataOut: DataOutput = new DataOutputStream(out)
+      shard.write(dataOut)
+      dataOut.asInstanceOf[DataOutputStream].close()
+      out.close()
+    })
+    // DELETE, ONLY FOR TESTING SERIALIZATION
+    // -------
+//    val deserializedShards: List[Shard] = (1 to shardID).map(id => {
+//      val in = new FileInputStream(shardDirectory + "/" + "shard-"+id)
+//      val dataIn: DataInput = new DataInputStream(in)
+//      val shard: Shard = Shard()
+//      shard.readFields(dataIn)
+//      shard
+//    }).toList
+    // ------
+    shardID
   }
 }
 

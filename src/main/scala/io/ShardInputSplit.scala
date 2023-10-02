@@ -1,5 +1,7 @@
 package io
+import NetGraphAlgebraDefs.NodeObject
 
-class ShardInputSplit {
+class ShardInputSplit(id: Int, originalSubgraph:  List[Set[NodeObject]], perturbedSubGraph:  List[Set[NodeObject]]) {
   // each inputSplit represents a shard
+
 }
