@@ -2,12 +2,11 @@ package app
 
 import preprocessing.Processor
 import Processor.{generateGraphs, createShards}
+import org.apache.hadoop.conf.Configuration
+import core.Driver
 
 object Main {
   def main(args: Array[String]): Unit = {
-    val (graphName: String, perturbedGraphName: String) = generateGraphs()
-    val numOfShards = createShards(graphName, perturbedGraphName)
-    // call preprocessor
-    // call driver
+    Driver.runJob(args)
   }
 }
