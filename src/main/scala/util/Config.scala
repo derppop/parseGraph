@@ -5,10 +5,10 @@ object Config {
   private val config = ConfigFactory.load()
 
   object Preprocessor {
-    private val preprocessorConfig = config.getConfig("preprocessor")
+    private val preprocessorConfig = config.getConfig("Preprocessor")
     
-    val subGraphSize: Double = preprocessorConfig.getDouble("subGraphSize")
     val shardDirectory: String = preprocessorConfig.getString("shardDirectory")
+    val subGraphRatio: Double = preprocessorConfig.getDouble("subGraphRatio")
+    val minSubGraphSize: Int = preprocessorConfig.getInt("minSubGraphSize")
   }
-
 }

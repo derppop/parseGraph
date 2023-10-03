@@ -1,6 +1,0 @@
-18:11:11.731 [main] INFO  - Default output directory: C:\Users\yortb\Desktop\cs441\parseGraph
-18:11:11.733 [main] INFO  - Using output directory: C:\Users\yortb\Desktop\cs441\hw1\outputs
-18:11:12.088 [main] INFO  - Generating a random graph with 4000 nodes and ensuring 100.0% reachability
-18:11:12.381 [scala-execution-context-global-15] INFO  - Random value generator created with the seed Some(100)
-18:11:12.885 [main] INFO  - Inserting 4000 created nodes into the graph
-18:11:12.900 [main] INFO  - Created 4000 nodes

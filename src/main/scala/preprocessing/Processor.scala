@@ -3,8 +3,6 @@ package preprocessing
 import NetGraphAlgebraDefs.*
 import NetGraphAlgebraDefs.NetModelAlgebra.{outputDirectory, perturbationCoeff, propValueRange}
 import Utilz.NGSConstants
-import com.typesafe.config.ConfigFactory
-
 import java.io.{DataInput, DataInputStream, DataOutput, DataOutputStream, File, FileInputStream, FileOutputStream}
 import scala.collection.mutable
 import scala.collection.mutable.Set
@@ -12,6 +10,7 @@ import scala.jdk.CollectionConverters.*
 import scala.math.max
 import models.Shard
 import org.slf4j.LoggerFactory
+import util.Config.Preprocessor.{shardDirectory, minSubGraphSize, subGraphRatio}
 
 object Processor{
   private val logger = LoggerFactory.getLogger(Processor.getClass)
@@ -33,10 +32,6 @@ object Processor{
     (graphName, graphName+".perturbed")
   }
   def createShards(graphName: String, perturbedGraphName: String): Int = {
-    val config = ConfigFactory.load()
-    val subGraphRatio = config.getDouble("Preprocessor.subGraphRatio")
-    val minSubGraphSize = config.getInt("Preprocessor.minSubGraphSize")
-    val shardDirectory = config.getString("Preprocessor.shardDirectory")
     val graph = NetGraph.load(fileName = graphName).get
     val perturbedGraph = NetGraph.load(fileName = perturbedGraphName).get
     val subGraphs = graph.sm.nodes().asScala.grouped(max(minSubGraphSize, (graph.totalNodes * subGraphRatio).toInt)).toList
