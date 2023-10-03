@@ -5,8 +5,8 @@ import org.apache.hadoop.mapreduce.{InputSplit, JobContext, RecordReader, TaskAt
 import models.Shard
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat
 import org.apache.hadoop.fs.Path
-import org.apache.hadoop.mapred.FileSplit
-import util.Config.Preprocessor.shardDirectory
+import org.apache.hadoop.mapreduce.lib.input.FileSplit
+import util.Config.Job.shardDirectory
 
 
 class ShardInputFormat extends FileInputFormat[NullWritable, Shard] {

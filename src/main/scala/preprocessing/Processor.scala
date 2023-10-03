@@ -10,7 +10,8 @@ import scala.jdk.CollectionConverters.*
 import scala.math.max
 import models.Shard
 import org.slf4j.LoggerFactory
-import util.Config.Preprocessor.{shardDirectory, minSubGraphSize, subGraphRatio}
+import util.Config.Preprocessor.{minSubGraphSize, subGraphRatio}
+import util.Config.Job.shardDirectory
 
 object Processor{
   private val logger = LoggerFactory.getLogger(Processor.getClass)
