@@ -56,7 +56,7 @@ lazy val root = (project in file("."))
     name := "graphComparison"
   )
 
-mainClass in Compile := Some("Main")
+Compile / run / mainClass := Some("app.Main")
 
 unmanagedBase := baseDirectory.value / "src" / "main" / "resources" / "lib"
 

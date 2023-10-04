@@ -18,7 +18,7 @@ class ShardInputFormat extends FileInputFormat[NullWritable, Shard] {
     val splits = new java.util.ArrayList[InputSplit]()
     val numShards = job.getConfiguration.get("num.shards").toInt
     // build splits (list of shard paths) to be used by record reader
-    (0 to numShards).foreach(id => {
+    (1 to numShards).foreach(id => {
       val path = new Path(shardDirectory + "/" + "shard-"+id)
       val fileSystem = path.getFileSystem(job.getConfiguration)
       val fileStatus = fileSystem.getFileStatus(path)

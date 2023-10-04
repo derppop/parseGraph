@@ -10,6 +10,7 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat
 import util.Config.Job.{shardDirectory, jobOutputDirectory}
 import org.apache.hadoop.fs.Path
+import util.HdfsUploader.uploadFromLocal
 
 object Driver {
 // configures job
@@ -34,6 +35,8 @@ def runJob(args: Array[String]): Unit = {
   val (graphName: String, perturbedGraphName: String) = generateGraphs()
   val numShards = createShards(graphName, perturbedGraphName)
   job.getConfiguration.set("num.shards", numShards.toString)
+  
+  uploadFromLocal(shardDirectory, "/shards/")
 
   FileInputFormat.addInputPath(job, new Path(shardDirectory+"/"))
   FileOutputFormat.setOutputPath(job, new Path(jobOutputDirectory+"/"))

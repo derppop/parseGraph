@@ -1,0 +1,4 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(G:\cs441\parseGraph\src\main\resources\application.conf,G:\cs441\parseGraph\target\scala-3.2.2\classes\application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(G:\cs441\parseGraph\src\main\resources\logback.XML,G:\cs441\parseGraph\target\scala-3.2.2\classes\logback.XML)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(G:\cs441\parseGraph\src\main\resources\lib\netmodelsim.jar,G:\cs441\parseGraph\target\scala-3.2.2\classes\lib\netmodelsim.jar)[0m
