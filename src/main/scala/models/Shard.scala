@@ -31,6 +31,7 @@ case class Shard(var id: Int = 0, var subGraph: Set[NodeObject] = null, var pert
     out.writeInt(node.maxBranchingFactor)
     out.writeInt(node.maxProperties)
     out.writeDouble(node.storedValue)
+    for (prop <- node.properties) out.writeInt(prop)
   }
 
   override def readFields(in: DataInput): Unit = {
@@ -55,6 +56,8 @@ case class Shard(var id: Int = 0, var subGraph: Set[NodeObject] = null, var pert
     val maxBranchingFactor = in.readInt()
     val maxProperties = in.readInt()
     val storedValue = in.readDouble()
-    NodeObject(id, children, props, currentDepth, propValueRange, maxDepth, maxBranchingFactor, maxProperties, storedValue)
+    val newProperties: List[Int] = (0 until props).map(_ => in.readInt()).toList
+
+    NodeObject(id, children, props, currentDepth, propValueRange, maxDepth, maxBranchingFactor, maxProperties, storedValue, Option(newProperties))
   }
 }

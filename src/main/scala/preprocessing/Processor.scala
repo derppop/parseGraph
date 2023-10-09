@@ -3,15 +3,20 @@ package preprocessing
 import NetGraphAlgebraDefs.*
 import NetGraphAlgebraDefs.NetModelAlgebra.{outputDirectory, perturbationCoeff, propValueRange}
 import Utilz.NGSConstants
+
 import java.io.{DataInput, DataInputStream, DataOutput, DataOutputStream, File, FileInputStream, FileOutputStream}
 import scala.collection.mutable
 import scala.collection.mutable.Set
 import scala.jdk.CollectionConverters.*
 import scala.math.max
 import models.Shard
+import org.apache.hadoop.conf.Configuration
+import org.apache.hadoop.fs.{FileSystem, Path}
 import org.slf4j.LoggerFactory
-import util.Config.Preprocessor.{minSubGraphSize, subGraphRatio}
+import util.Config.Preprocessor.{graphName, minSubGraphSize, perturbedGraphName, subGraphRatio}
 import util.Config.Job.shardDirectory
+import org.apache.hadoop.io.IOUtils
+
 
 object Processor{
   private val logger = LoggerFactory.getLogger(Processor.getClass)
@@ -23,18 +28,19 @@ object Processor{
 
   def generateGraphs(): (String, String) = {
     val graph: NetGraph = NetModelAlgebra().get
-    val graphName = NGSConstants.OUTPUTFILENAME
+//    val graphName = NGSConstants.OUTPUTFILENAME
     graph.persist(outputDirectory, graphName) // serialize graph
 //    graph.toDotVizFormat("Before graph: " + graphName, outputDirectory, graphName)
     val (perturbedGraph, changes): GraphPerturbationAlgebra#GraphPerturbationTuple = GraphPerturbationAlgebra(graph.copy)
-    perturbedGraph.persist(outputDirectory, graphName.concat(".perturbed"))
+//    perturbedGraph.persist(outputDirectory, graphName.concat(".perturbed"))
+    perturbedGraph.persist(outputDirectory, perturbedGraphName)
 //    perturbedGraph.toDotVizFormat("After graph: " + graphName + ".perturbed", outputDirectory, graphName + ".perturbed")
     GraphPerturbationAlgebra.persist(changes, outputDirectory.concat(graphName.concat(".yaml")))
-    (graphName, graphName+".perturbed")
+    (graphName, perturbedGraphName)
   }
-  def createShards(graphName: String, perturbedGraphName: String): Int = {
-    val graph = NetGraph.load(fileName = graphName).get
-    val perturbedGraph = NetGraph.load(fileName = perturbedGraphName).get
+  def createShards(): Int = {
+    val graph = NetGraph.load(fileName = graphName, outputDirectory).get
+    val perturbedGraph = NetGraph.load(fileName = perturbedGraphName, outputDirectory).get
     val subGraphs = graph.sm.nodes().asScala.grouped(max(minSubGraphSize, (graph.totalNodes * subGraphRatio).toInt)).toList
     logger.info(s"Split original graph into ${subGraphs.size} sub-graphs")
     val perturbedSubGraphs = perturbedGraph.sm.nodes().asScala.grouped(max(minSubGraphSize, (perturbedGraph.totalNodes * subGraphRatio).toInt)).toList
@@ -48,13 +54,16 @@ object Processor{
     }))
     logger.info(s"Created ${shards.size} shards")
 
+    val conf = new Configuration()
+    val fs = FileSystem.get(conf)
+    val shardDirectoryPath = new Path(shardDirectory)
+
     shards.foreach(shard => {
       // create file named shard-{NUM OF SHARD}
-      val out = new FileOutputStream(shardDirectory + "/" + "shard-"+shard.id)
-      val dataOut: DataOutput = new DataOutputStream(out)
-      shard.write(dataOut)
-      dataOut.asInstanceOf[DataOutputStream].close()
-      out.close()
+      val shardPath = new Path(shardDirectoryPath,s"shard-${shard.id}")
+      val fsOut = fs.create(shardPath)
+      shard.write(fsOut)
+      IOUtils.closeStream(fsOut)
     })
     // DELETE, ONLY FOR TESTING SERIALIZATION
     // -------
@@ -66,6 +75,7 @@ object Processor{
 //      shard
 //    }).toList
     // ------
+    fs.close()
     shardID
   }
 }

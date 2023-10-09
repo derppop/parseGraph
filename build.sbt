@@ -62,6 +62,11 @@ unmanagedBase := baseDirectory.value / "src" / "main" / "resources" / "lib"
 
 libraryDependencies ++= commonDependencies
 
+libraryDependencies ++= Seq(
+  "org.mockito" % "mockito-core" % "5.2.0" % Test,
+  "org.apache.mrunit" % "mrunit" % "1.1.0" % Test classifier "hadoop2"
+)
+
 clean := {
   clean.dependsOn(cleanProject).value
 }
