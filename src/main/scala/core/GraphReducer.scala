@@ -6,16 +6,13 @@ import util.Config.Reducer.simScoreThreshold
 
 import java.lang
 
-//REPLACE IN AND OUT KEY VALUE PAIRS
+// Input: Node-pair, Sim-score
+// Output: Node-pair, Sim-score (Above threshold)
 class GraphReducer() extends Reducer[Text, DoubleWritable, Text, DoubleWritable]{
-  // reducer class
-  // inherit reducer from hadoop
-  // input would be
-  // output would be key: node pairs value: similarity score
 
   override def reduce(key: Text, values: lang.Iterable[DoubleWritable], context: Reducer[Text, DoubleWritable, Text, DoubleWritable]#Context): Unit = {
+    // Filter scores above threshold
     var score = 0.0
-
     val valIterator = values.iterator()
     while (valIterator.hasNext) {
       val currentScore = valIterator.next().get()

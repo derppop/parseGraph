@@ -6,22 +6,21 @@ import java.io.{DataInput, DataOutput}
 
 
 case class Shard(var id: Int = 0, var subGraph: Set[NodeObject] = null, var perturbedSubGraph: Set[NodeObject] = null) extends Writable{
-  // shard id
-  // original subgraph
-  // perturbed subgraph
   override def write(out: DataOutput): Unit = {
-    // serialize shard
+    // Serialize shard
     out.writeInt(id)
 
+    // Original subgraph
     out.writeInt(subGraph.size)
     subGraph.foreach(node => writeNode(out, node))
 
+    // Perturbed subgraph
     out.writeInt(perturbedSubGraph.size)
     perturbedSubGraph.foreach(node => writeNode(out, node))
   }
 
   private def writeNode(out: DataOutput, node: NodeObject): Unit = {
-    // serialize node
+    // Serialize node
     out.writeInt(node.id)
     out.writeInt(node.children)
     out.writeInt(node.props)
@@ -35,18 +34,20 @@ case class Shard(var id: Int = 0, var subGraph: Set[NodeObject] = null, var pert
   }
 
   override def readFields(in: DataInput): Unit = {
-    // deserialize shard
+    // Deserialize shard
     id = in.readInt()
 
+    // Original subgraph
     val subgraphSize = in.readInt()
     subGraph = (0 until subgraphSize).map(_ => readNode(in)).toSet
 
+    // Perturbed Subgraph
     val perturbedSubgraphSize = in.readInt()
     perturbedSubGraph = (0 until perturbedSubgraphSize).map(_ => readNode(in)).toSet
   }
 
   private def readNode(in: DataInput): NodeObject = {
-    // deserialize node
+    // Deserialize node
     val id = in.readInt()
     val children = in.readInt()
     val props = in.readInt()

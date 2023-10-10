@@ -13,40 +13,35 @@ import models.Shard
 import org.apache.hadoop.conf.Configuration
 import org.apache.hadoop.fs.{FileSystem, Path}
 import org.slf4j.LoggerFactory
-import util.Config.Preprocessor.{graphName, minSubGraphSize, perturbedGraphName, subGraphRatio}
+import util.Config.Preprocessor.{minSubGraphSize, subGraphRatio}
 import util.Config.Job.shardDirectory
 import org.apache.hadoop.io.IOUtils
 
 
 object Processor{
   private val logger = LoggerFactory.getLogger(Processor.getClass)
-  // generate graph
-  // perturb graph
-  // pair every subgraph in original with every subgraph in perturbed
-  // place pairs into shard objects (also used in InputFormat) with shard id's
-  // serialize each shard and write each to a file in /shards
 
   def generateGraphs(): (String, String) = {
+    // Generate graph
     val graph: NetGraph = NetModelAlgebra().get
-//    val graphName = NGSConstants.OUTPUTFILENAME
-    graph.persist(outputDirectory, graphName) // serialize graph
-//    graph.toDotVizFormat("Before graph: " + graphName, outputDirectory, graphName)
+    val graphName = NGSConstants.OUTPUTFILENAME
+    val perturbedGraphName = graphName + ".perturbed"
+    graph.persist(outputDirectory, graphName) // Serialize original graph
+    // Perturb graph
     val (perturbedGraph, changes): GraphPerturbationAlgebra#GraphPerturbationTuple = GraphPerturbationAlgebra(graph.copy)
-//    perturbedGraph.persist(outputDirectory, graphName.concat(".perturbed"))
-    perturbedGraph.persist(outputDirectory, perturbedGraphName)
-//    perturbedGraph.toDotVizFormat("After graph: " + graphName + ".perturbed", outputDirectory, graphName + ".perturbed")
+    perturbedGraph.persist(outputDirectory, perturbedGraphName) // Serialize perturbed graph
     GraphPerturbationAlgebra.persist(changes, outputDirectory.concat(graphName.concat(".yaml")))
     (graphName, perturbedGraphName)
   }
-  def createShards(): Int = {
+  def createShards(graphName: String, perturbedGraphName: String): Int = {
     val graph = NetGraph.load(fileName = graphName, outputDirectory).get
     val perturbedGraph = NetGraph.load(fileName = perturbedGraphName, outputDirectory).get
     val subGraphs = graph.sm.nodes().asScala.grouped(max(minSubGraphSize, (graph.totalNodes * subGraphRatio).toInt)).toList
     logger.info(s"Split original graph into ${subGraphs.size} sub-graphs")
     val perturbedSubGraphs = perturbedGraph.sm.nodes().asScala.grouped(max(minSubGraphSize, (perturbedGraph.totalNodes * subGraphRatio).toInt)).toList
     logger.info(s"Split perturbed graph into ${perturbedSubGraphs.size} sub-graphs")
-    // serialize sub graphs and deserialize them in driver
-    (subGraphs, perturbedSubGraphs)
+
+    // Place pairs into shard objects (also used in InputFormat) with shard id's
     var shardID = 0
     val shards: List[Shard] = subGraphs.flatMap(subgraph => perturbedSubGraphs.map(perturbedSubGraph => {
       shardID += 1
@@ -54,65 +49,19 @@ object Processor{
     }))
     logger.info(s"Created ${shards.size} shards")
 
+    // Serialize each shard and write them to shards folder
     val conf = new Configuration()
     val fs = FileSystem.get(conf)
     val shardDirectoryPath = new Path(shardDirectory)
 
     shards.foreach(shard => {
-      // create file named shard-{NUM OF SHARD}
+      // Create file named shard-{ID OF SHARD}
       val shardPath = new Path(shardDirectoryPath,s"shard-${shard.id}")
       val fsOut = fs.create(shardPath)
       shard.write(fsOut)
       IOUtils.closeStream(fsOut)
     })
-    // DELETE, ONLY FOR TESTING SERIALIZATION
-    // -------
-//    val deserializedShards: List[Shard] = (1 to shardID).map(id => {
-//      val in = new FileInputStream(shardDirectory + "/" + "shard-"+id)
-//      val dataIn: DataInput = new DataInputStream(in)
-//      val shard: Shard = Shard()
-//      shard.readFields(dataIn)
-//      shard
-//    }).toList
-    // ------
     fs.close()
     shardID
   }
 }
-
-
-//val visualizeGraphs1 = new ProcessBuilder(
-//  "sfdp",
-//  "-x",
-//  "-Goverlap=scale",
-//  "-Tpng",
-//  outputDirectory + graphName + ".dot"
-//)
-//visualizeGraphs1.redirectOutput(ProcessBuilder.Redirect.to(new File(outputDirectory + graphName + ".png")))
-//val process1 = visualizeGraphs1.start()
-//
-//val exitCode1 = process1.waitFor()
-//
-//if (exitCode1 == 0) {
-//  println("Graph visualization complete.")
-//} else {
-//  System.err.println("Graph visualization failed with exit code: " + exitCode1)
-//}
-//
-//val visualizeGraphs2 = new ProcessBuilder(
-//  "sfdp",
-//  "-x",
-//  "-Goverlap=scale",
-//  "-Tpng",
-//  outputDirectory + graphName + ".perturbed" + ".dot"
-//)
-//visualizeGraphs2.redirectOutput(ProcessBuilder.Redirect.to(new File(outputDirectory + graphName + ".perturbed" + ".png")))
-//val process2 = visualizeGraphs2.start()
-//
-//val exitCode2 = process2.waitFor()
-//
-//if (exitCode2 == 0) {
-//  println("Graph visualization complete.")
-//} else {
-//  System.err.println("Graph visualization failed with exit code: " + exitCode2)
-//}

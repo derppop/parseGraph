@@ -10,14 +10,12 @@ import util.Config.Job.shardDirectory
 
 
 class ShardInputFormat extends FileInputFormat[NullWritable, Shard] {
-  // creates inputSplit(shard) instances
-  // implements getSplits - reads file and creates inputSplit for each shard
-  // implements createRecordReader - creates instance of record reader
-
+  // Creates FileSplit(shard) instances
   override def getSplits(job: JobContext): java.util.List[InputSplit] = {
+    // Reads file and creates FileSplit for each shard
     val splits = new java.util.ArrayList[InputSplit]()
     val numShards = job.getConfiguration.get("num.shards").toInt
-    // build splits (list of shard paths) to be used by record reader
+    // Build splits (list of shard paths) to be used by record reader
     (1 to numShards).foreach(id => {
       val path = new Path(shardDirectory + "/" + "shard-"+id)
       val fileSystem = path.getFileSystem(job.getConfiguration)

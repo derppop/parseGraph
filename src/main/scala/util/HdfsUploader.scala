@@ -7,6 +7,7 @@ import java.net.URI
 import java.io.File
 
 object HdfsUploader {
+  // Was used to upload shards from local to hdfs directory, no longer used
   def uploadFromLocal(localDir: String, hdfsDir: String): Unit = {
     val conf = new Configuration()
     val localPath = new Path(localDir)

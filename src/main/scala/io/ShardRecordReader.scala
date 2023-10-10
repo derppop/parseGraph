@@ -8,10 +8,9 @@ import org.apache.hadoop.mapreduce.lib.input.FileSplit
 import java.io.{DataInputStream, FileInputStream, IOException, ObjectInputStream}
 
 class ShardRecordReader extends RecordReader[NullWritable, Shard]{
-  // reads data from inputSplit, converts it to key, value pairs for mappers
-  // reads serialized data from preprocessor and deserialize it back into shard instance
-  // passes pair of subgraph inside shard to mapper as value, key as shard id
-  // each mapper gets a recordReader to read its assigned inputSplit
+  // Reads data from inputSplit, converts it to key, value pairs for mappers
+  // Passes pair of subgraph inside shard to mapper as value, key as shard id
+  // Each mapper gets a recordReader to read its assigned inputSplit
   private var key: NullWritable = NullWritable.get()
   private var value: Shard = Shard()
   private var dataInputStream: DataInputStream = _
@@ -27,6 +26,7 @@ class ShardRecordReader extends RecordReader[NullWritable, Shard]{
 
   // reads shard from file for mapper to process
   override def nextKeyValue(): Boolean = {
+    // Reads serialized data from preprocessor and deserialize it back into shard instance
     if (!processed) {
       try {
         value.readFields(dataInputStream)

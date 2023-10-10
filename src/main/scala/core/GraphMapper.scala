@@ -9,6 +9,7 @@ import util.SimRank.getSimilarityScore
 class GraphMapper() extends Mapper[NullWritable, Shard, Text, DoubleWritable]{
 
   override def map(key: NullWritable, value: Shard, context: Mapper[NullWritable, Shard, Text, DoubleWritable]#Context): Unit = {
+    // Generate sim score for every node pair in shard
     value.subGraph.foreach(node => {
       value.perturbedSubGraph.foreach(perturbedNode => {
         context.write(new Text(node.id.toString + "-" + perturbedNode.id.toString), getSimilarityScore(node, perturbedNode))
