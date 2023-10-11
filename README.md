@@ -32,6 +32,7 @@ the following is a list of config variables specific to this project.
 ### Job
 * baseDirectory - The root directory of your s3 bucket or hdfs path
 * shardDirectory - The folder you want shards to be placed in 
+* graphDirectory - Local directory for graphs to be outputted and read from
 * jobOutputDirectory - The folder you want the results of the job to be stored
 
 ### Preprocessor
