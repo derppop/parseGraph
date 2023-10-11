@@ -17,7 +17,6 @@ lazy val commonDependencies = Seq(
   "org.scalatest" %% "scalatest" % scalaTestVersion % Test,
   "org.scalatestplus" %% "mockito-4-2" % "3.2.12.0-RC2" % Test,
   "com.typesafe" % "config" % typeSafeConfigVersion,
-  // Exclude other SLF4J bindings and include only logback-classic
   "ch.qos.logback" % "logback-classic" % logbackVersion excludeAll(
     ExclusionRule(organization = "org.slf4j"),
     ExclusionRule(organization = "org.slf4j.impl")
@@ -30,8 +29,6 @@ lazy val commonDependencies = Seq(
   "org.yaml" % "snakeyaml" % "2.0",
   "org.mockito" % "mockito-core" % "5.2.0" % Test,
   "org.apache.mrunit" % "mrunit" % "1.1.0" % Test classifier "hadoop2",
-//  "org.apache.hadoop" % "hadoop-aws" % "3.2.1",
-//  "software.amazon.awssdk" % "aws-sdk-java" % "2.20.69"
 )
 
 val cleanProject = taskKey[Unit]("Cleaning graphs and shards")

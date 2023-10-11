@@ -8,11 +8,12 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat
 import org.apache.hadoop.io.{DoubleWritable, Text}
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat
-import util.Config.Job.{bucketDirectory, jobOutputDirectory, shardDirectory}
+import util.Config.Job.{baseDirectory, jobOutputDirectory, shardDirectory, graphDirectory}
 import NetGraphAlgebraDefs.NetModelAlgebra.outputDirectory
 import org.apache.hadoop.fs.{FileSystem, Path}
 import org.slf4j.LoggerFactory
 import util.HdfsUploader.uploadFromLocal
+import java.io.File
 
 object Driver {
 private val logger = LoggerFactory.getLogger(Driver.getClass)
@@ -21,22 +22,31 @@ def runJob(args: Array[String]): Unit = {
   // Configure job
   val conf = new Configuration()
   val job = Job.getInstance(conf, "Graph comparison")
-  val fileSystem = FileSystem.get(new java.net.URI(bucketDirectory), conf)
-  val inputPath = new Path(shardDirectory)
-  val outputPath = new Path(jobOutputDirectory)
-  val graphPath = new Path(outputDirectory)
+  val fileSystem = FileSystem.get(new java.net.URI(baseDirectory), conf)
+  val inputPath = new Path(baseDirectory+shardDirectory)
+  val outputPath = new Path(baseDirectory+jobOutputDirectory)
+
   job.setJarByClass(this.getClass)
 
+  val currentDir = new java.io.File(".").getCanonicalPath
+  val graphPath = new File(currentDir, graphDirectory)
+
+  logger.info(s"Current working directory: $currentDir")
+  logger.info(s"Graphs path: ${graphPath.getPath}")
 
   // clear graphs directory of old graphs
-  if (fileSystem.exists(graphPath)) {
-    logger.info(s"Clearing graphs path at $outputDirectory")
-    fileSystem.listStatus(graphPath).foreach { graph =>
-      fileSystem.delete(graph.getPath, false)
+  if (graphPath.exists()) {
+    logger.info(s"Clearing graphs path at ${graphPath.getAbsolutePath}")
+    graphPath.listFiles().foreach { graph =>
+      if (!graph.delete) {
+        logger.warn(s"Failed to delete ${graph.getAbsolutePath}")
+      }
     }
   } else {
-    logger.info(s"Graphs path at $outputDirectory does not exist, creating it")
-    fileSystem.mkdirs(graphPath)
+    logger.info(s"Graphs path at ${graphPath.getAbsolutePath} does not exist, creating it")
+    if (!graphPath.mkdirs()) {
+      logger.warn(s"Failed to create ${graphPath.getAbsolutePath}")
+    }
   }
 
   // Clear input directory of old shards
