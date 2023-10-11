@@ -48,3 +48,5 @@ the following is a list of config variables specific to this project.
 * depthSimWeight - Weight of depth similarity in computing similarity score
 * branchFactorSimWeight - Weight of branchFactor similarity in computing similarity score
 * storedValSimWeight - Weight of storedVal similarity in computing similarity score
+
+[Local demo](https://youtu.be/DzDXjEwv46E)
