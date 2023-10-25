@@ -1,0 +1,11 @@
+Student - Joseph David
+
+=> No scalatests = -1%
+=> Missing Functionality: No comparisions with the original Yaml file produced by NetGameSim, no Metrics for your algorithm, No AWS deployment = -1%
+
+
+You seem to have a good understanding of Mappers and Reducers. However, some functionalities are missing, as well as the AWS deployment. While there are comments, I would also have liked to see some more technical documentation for your code, either in the comments or in the ReadMe.md file. Please pay close attention to the video requirements as well - you need to introduce yourself and narrate what you're doing on screen. These are just finer details to work on, no points have been deducted for them.
+I liked the way you went about designing the core functionality.
+Good job overall!
+
+Grade = 13%
